@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>搜索框</title>
+    <link rel="stylesheet" href="../css/search.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <div class="extleft">
+          <input type="text" name="" id="" placeholder="" class="inp" />
+          <div class="ul">
+            <div class="history"></div>
+            <div class="history"></div>
+            <div class="history"></div>
+            <div class="history"></div>
+          </div>
+        </div>
+        <div class="extcenter">
+          <img
+            src="../imgs/相机.png"
+            alt=""
+            width="25px"
+            height="25px"
+            style="margin-top: 8px"
+          />
+        </div>
+        <div class="extright">百度一下</div>
+      </div>
+    </div>
+
+    <script>
+      function $(item) {
+        return document.querySelector(item);
+      }
+      var all = document.querySelectorAll(".history");
+      var newArr = [];
+      for (let i = 0; i < all.length; i++) {
+        //获取列表并添加到数组里
+        newArr.push(all[i]);
+      }
+      var arr = ["热搜榜第一", "热搜榜第二", "热搜榜第三", "热搜榜第四"];
+      arr.length = 4;
+      for (let i = 0; i < newArr.length; i++) {
+        newArr[i].innerHTML = arr[i];
+      }
+      $(".extright").onclick = function () {
+        var inpva = $(".inp").value; //获取文本框输入的内容
+        if (arr.indexOf(inpva) == -1) {
+          //如果数组里没有这个值就获取
+          arr.unshift(inpva);
+          for (let i = 0; i < newArr.length; i++) {
+            newArr[i].innerHTML = arr[i];
+          }
+          $(".inp").value = "";
+        } else {
+          console.log(111);
+          let num = arr.indexOf(inpva);
+          let temporary = arr[num];
+          arr.splice(num, 1);
+          console.log(arr);
+          arr.unshift(temporary);
+          for (let i = 0; i < newArr.length; i++) {
+            newArr[i].innerHTML = arr[i];
+          }
+          $(".inp").value = "";
+        }
+      };
+      $('.inp').onkeydown = function(){
+        console.log(1111);
+      }
+    </script>
+  </body>
+</html>

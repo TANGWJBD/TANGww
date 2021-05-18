@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [
+        { username: "1dh", sex: "man", num: 1 },
+        { username: "2dh", sex: "woman", num: 2 },
+        { username: "3dh", sex: "centerman", num: 3 },
+        { username: "4dh", sex: "man", num: 4 },
+        { username: "5dh", sex: "man", num: 5 },
+      ];
+      Array.prototype.nMap = function (fn) {
+        var newArr = [];
+        for (let i = 0; i < arr.length; i++) {
+          newArr.push(fn(arr[i]));
+        }
+        return newArr;
+      };
+      var gg = arr.nMap(function (item, index, arr) {
+        return item.num + 2;
+      });
+      console.log(gg);
+    </script>
+  </body>
+</html>

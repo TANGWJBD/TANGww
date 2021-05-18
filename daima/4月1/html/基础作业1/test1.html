@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 第二个 -->
+    <input type="text" name="" id="input1" placeholder="输入一个带有小数的数字" >
+    <input type="text" name="" id="input2" placeholder="输入保留的小数位数">
+    <input type="button" name="" id="" onclick="fn2()" value="按我显示：">
+    <div class="div2" style="height: 50px;width: 150px; border: 1px solid red;"></div>
+
+    <script>
+        //第一个
+        var str = '11';
+        var bool = false;
+        var undi = undefined;
+        var nu = null;
+        console.log(Number(str));
+        console.log(Number(bool));
+        console.log(Number(undi));
+        console.log(Number(nu));
+        console.log('------------------------------------------');
+        //第二个
+        var inp1 = document.getElementById('input1');
+        var inp2 = document.getElementById('input2');
+        var out = document.querySelector('.div2');
+        function fn2(){
+            if(Number(inp1.value) && Number(inp2.value)){
+                var num = inp1.value.indexOf('.');
+                var integer = inp1.value.substring(0,num);
+                // console.log(integer);
+                var ddd = num+1 + Number(inp2.value);
+                // console.log(ddd);
+                var decimal = inp1.value.substring(num+1,ddd);
+                // console.log(decimal);
+                var change = integer + '.' + decimal;
+                // console.log(change);
+                out.innerHTML = Number(change);
+            }
+            else{
+                alert('输入合法字符')
+            }
+        }
+        //第三个
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.box{
+    width: 380px;
+    height: 90px;
+    /* border: 1px solid red; */
+    margin-left: 30px;
+}
+.text1{
+    font-weight: bold;
+    font-size: 17px;
+    color: #333333;
+}
+.text2{
+    font-size: 12px;
+    line-height: 30px;
+    margin-top: 7px;
+    color: #666666;
+}
+.box_small{
+    width: 187px;
+    height: 90px;
+    /* border: 1px solid black; */
+    float: left;
+}
+.box-x{
+    width: 380px;
+    height: 60px;
+    margin-left: 30px;
+}

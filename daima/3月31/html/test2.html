@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/test2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">用户ID：<span class="a0"></span></div>
+      <div class="box2">
+        <b>金币数量：<span class="a1"> </span></b><br />
+        用户剩余金币数量:<span class="a2">0</span><br />
+        用户剩余银币数量:<span class="a3">0</span><br />
+        用户剩余总币金额:<span class="a4">0</span><br />
+      </div>
+      <div class="box3">
+        <b>学习过的科目分数:</b><br />
+        HTML: <span class="b1">0</span>分<br />
+        css: <span class="b2">0</span>分<br />
+        Javascript: <span class="b3">0</span>分<br />
+      </div>
+      <div class="box4">
+        登录名：<span class="c1">0</span><br />
+        <input type="text" name="" id="login" value="" /><br />
+        登录密码：<span class="c2">0</span><br />
+        <input type="password" name="" id="pass" value="" /><br />
+        确认登录密码：<span class="c3">0</span><br />
+        <input type="password" name="" id="tpass" value="" />
+      </div>
+      <div class="box5">
+        <button id="but" onclick="myfu()">立即修改</button>
+      </div>
+      <div>
+          账号：1<br>
+          密码：1<br>
+          确认密码：1
+      </div>
+    </div>
+
+    <script>
+        var a0 = document.querySelector(".a0");
+      var a1 = document.querySelector(".a1");
+      var a2 = document.querySelector(".a2");
+      var a3 = document.querySelector(".a3");
+      var a4 = document.querySelector(".a4");
+
+      var b1 = document.querySelector(".b1");
+      var b2 = document.querySelector(".b2");
+      var b3 = document.querySelector(".b3");
+
+      var c1 = document.querySelector(".c1");
+      var c2 = document.querySelector(".c2");
+      var c3 = document.querySelector(".c3");
+
+    //   console.log(c1);
+
+      var log = document.getElementById('login');
+      var pas = document.getElementById("pass");
+      var spas = document.getElementById("tpass");
+      // var but = document.getElementById('but');
+
+      function myfu() {
+          var va1 = log.value;
+          var va2 = pas.value;
+          var va3 = spas.value;
+        if (!va1 || !va2 || !va3) {
+          alert("请输入完整信息");
+        }    
+        if(va1 != 1 || va2 != 1 || va3 != 1){
+            alert('不对，重新输入')
+        }
+        if(va1==1 & va2==1 & va3==1){
+            alert('登录成功');
+            a0.innerHTML = 'frank';
+            a1.innerHTML = '1200';
+            a2.innerHTML = '1200';
+            a3.innerHTML = '1200';
+            a4.innerHTML = '2400';
+
+            b1.innerHTML = '100';
+            b2.innerHTML = '100';
+            b3.innerHTML = '100';
+
+            c1.innerHTML = '1';
+            c2.innerHTML = '1';
+            c3.innerHTML = '1';
+
+            log.style.display = 'none';
+            pas.style.display = 'none';
+            spas.style.display = 'none';
+
+        }
+        // console.log(a1);
+      }
+    </script>
+  </body>
+</html>

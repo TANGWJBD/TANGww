@@ -1,0 +1,73 @@
+
+.biggest{
+    width: 299px;
+    height: 401px;
+    border: 1px solid rgb(218, 215, 215);
+    margin: 30px 30px;
+}
+.text1{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    border: 1px solid black;
+}
+.text2{
+    font-size: 13px;
+    color: #9a9a99;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.text3{
+    font-size: 13px;
+    color:  #9a9a99;
+    width: 250px;
+    line-height: 22px;
+    margin-top: 18px;
+    letter-spacing: 0.6px;
+    border: 1px solid black;
+}
+.heihe{
+    position: absolute;
+    left: 276px;
+    top: 93px;
+    height: 65px;
+    width: 62px;
+    background-color:rgb(37, 221, 77);
+    display: none;
+}
+.two{
+    color: white;
+    font-size: 25px;
+    font-style: oblique;
+    width: 32px;
+    margin-left: 12.5px;
+    margin-top: 3px;
+}
+.jun{
+    color: white;
+    font-size: 13px;
+    margin-left: 16px;
+}
+.picture:hover{
+    cursor: pointer;
+
+}
+.picture:hover+.heihe{
+    display: block;
+}
+.text1:hover{
+    color: red;
+    text-decoration: underline;
+}
+/* .text2:hover{
+    cursor: pointer;
+    color: brown;
+    text-decoration: underline;
+}
+.text3:hover{
+    cursor: pointer;
+    color: brown;
+    text-decoration: underline;
+} */

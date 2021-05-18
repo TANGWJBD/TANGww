@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>事件练习</title>
+    <style>
+      /* li {
+        cursor: pointer;
+      }
+      body {
+        border: 1px solid white;
+      }
+      .a2 {
+        position: fixed;
+        right: 0;
+        background-color: black;
+        color: white;
+        margin-right: 0px;
+        overflow: scroll;
+        height: 100vh;
+        width: 200px;
+      }
+      .a1 {
+        width: 20px;
+      }
+      .div1 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid rebeccapurple;
+      }
+      @keyframes na {
+        0% {
+          width: 200px;
+          height: 200px;
+        }
+        100% {
+          width: 400px;
+          height: 400px;
+        }
+      }
+      .star1 {
+        width: 0;
+        height: 0; */
+      /* border-top: 70px solid yellowgreen;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent; */
+      /* transform: rotate();
+        position: relative;
+        margin-top: 200px;
+        animation: 1s va infinite;
+      }
+      .star2 {
+        width: 0;
+        height: 0; */
+      /* border-top: 70px solid yellowgreen;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent; */
+      /* transform: rotate(70deg);
+        position: relative;
+        animation: 1s ca infinite;
+      }
+      .star3 {
+        width: 0;
+        height: 0; */
+      /* border-top: 70px solid yellowgreen;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent; */
+      /* transform: rotate(145deg);
+        position: relative;
+        animation: 1s aa infinite;
+      } */
+      /* @keyframes va {
+        0% {
+          border-top: 35px solid rgb(240, 74, 74);
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+        }
+        50% {
+          border-top: 70px solid yellowgreen;
+          border-left: 100px solid transparent;
+          border-right: 100px solid transparent;
+        }
+        100% {
+          border-top: 35px solid rgb(240, 74, 74);
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+        }
+      }
+      @keyframes ca {
+        0% {
+          border-top: 35px solid rgb(240, 74, 74);
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+        }
+        50% {
+          border-top: 70px solid yellowgreen;
+          border-left: 100px solid transparent;
+          border-right: 100px solid transparent;
+        }
+        100% {
+          border-top: 35px solid rgb(240, 74, 74);
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+        }
+      }
+      @keyframes aa {
+        0% {
+          border-top: 35px solid rgb(240, 74, 74);
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+        }
+        50% {
+          border-top: 70px solid yellowgreen;
+          border-left: 100px solid transparent;
+          border-right: 100px solid transparent;
+        }
+        100% {
+          border-top: 35px solid rgb(240, 74, 74);
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+        }
+      } */
+      .hgg {
+        width: 200px;
+        height: 100px;
+        border: 1px solid red;
+        margin-top: 300px;
+        /* animation: kk 1s ; */
+      }
+      @keyframes kk {
+        0% {
+          margin-top: 300px;
+        }
+        50% {
+          margin-top: 0px;
+        }
+        100% {
+          margin-top: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="a2">
+      <div class="a1">1</div>
+      <div class="a1">2</div>
+      <div class="a1">3</div>
+      <div class="a1">4</div>
+      <div class="a1">5</div>
+      <div class="a1">6</div>
+      <div class="a1">7</div>
+      <div class="a1">8</div>
+      <div class="a1">9</div>
+      <div class="a1">10</div>
+      <div class="a1">11</div>
+      <div class="a1">12</div>
+      <div class="a1">13</div>
+      <div class="a1">14</div>
+      <div class="a1">15</div>
+      <div class="a1">16</div>
+      <div class="a1">17</div>
+      <div class="a1">18</div>
+      <div class="a1">1</div>
+      <div class="a1">2</div>
+      <div class="a1">3</div>
+      <div class="a1">4</div>
+      <div class="a1">5</div>
+      <div class="a1">6</div>
+      <div class="a1">7</div>
+      <div class="a1">8</div>
+      <div class="a1">9</div>
+      <div class="a1">10</div>
+      <div class="a1">11</div>
+      <div class="a1">12</div>
+      <div class="a1">13</div>
+      <div class="a1">14</div>
+      <div class="a1">15</div>
+      <div class="a1">16</div>
+      <div class="a1">17</div>
+      <div class="a1">18</div>
+      <div class="a1">1</div>
+      <div class="a1">2</div>
+      <div class="a1">3</div>
+      <div class="a1">4</div>
+      <div class="a1">5</div>
+      <div class="a1">6</div>
+      <div class="a1">7</div>
+      <div class="a1">8</div>
+      <div class="a1">9</div>
+      <div class="a1">10</div>
+      <div class="a1">11</div>
+      <div class="a1">12</div>
+      <input type="button" value="点击返回顶部" class="inp" />
+    </div> -->
+
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+    </ul>
+
+<button>点击返回顶部</button> -->
+    <!-- <div class="div1">
+
+</div> -->
+    <!-- 
+    <div class="star1"></div>
+    <div class="star2"></div>
+    <div class="star3"></div> -->
+    <!-- <div class="hgg"></div> -->
+    <!-- <div
+      class="domA"
+      style="border: 1px solid red; width: 100px; height: 100px"
+    >
+      cccccccc
+    </div>
+    <div
+      class="domB"
+      style="border: 1px solid red; width: 100px; height: 100px"
+    ></div> -->
+    <input type="text" name="" id="inp" placeholder="输入" style="width: 400px;">
+    <script>
+       
+    //    * 1、点击事件 onclick
+    //    */
+      // 1-1、点击列表中的某项,该项移除。
+      function $(item) {
+        return document.querySelector(item);
+      }
+      // $('ul').onclick = function(){
+      //     // event.target.style.display = 'none'
+      //     // event.target.innerHTML = '';
+      //     event.target.remove();
+      // }
+
+      // 1-2、点击列表中的某项,其背景变色。
+      // $('ul').onclick = function(){
+      //     event.target.style.cssText = 'background-color:red;'
+      // }
+      // 1-3、点击按钮btnTop,网页滚动到顶部。
+      // $('button').onclick = function(){
+      //     document.documentElement.scrollTop = 0;
+      // }
+      // 1-3、点击按钮btnToList,网页滚动到列表顶部(需要获取列表的位置)。
+      // $('.inp').onclick = function(){
+      //     $('.a2').scrollTop = 0;
+      // }
+
+      /*
+       * 2、鼠标事件 mouseover、mouseout
+       */
+      // 2-1、鼠标移入列表中的某项,该项发生2px位移,鼠标离开,该项位置还原。
+      // $('ul').onmouseover = function(){
+      //     event.target.style.cssText = 'margin-left:2px';
+      // }
+      // $('ul').onmouseout = function(){
+      //     event.target.style.cssText = 'margin-left:0px';
+      // }
+      // 2-2、鼠标移入mousebox,添加变宽的过渡效果。
+      // $('.div1').onmouseover = function(){
+      //     $('.div1').style.cssText = 'animation: na 1s;width: 400px;height: 400px;';
+      // }
+      // 2-3、一颗跳动(帧动画变大变小)的小星星跟随鼠标移动。
+      //   var star1 = $('.star1');
+      //     var star2 = $('.star2');
+      //     var star3 = $('.star3');
+      //   document.onmousemove = function () {
+      //       star1.style.left = event.clientX + 'px';
+      //       star2.style.left = event.clientX + 'px';
+      //       star3.style.left = event.clientX + 'px';
+      //       star1.style.top = event.clientY-200 + 'px';
+      //       star2.style.top = event.clientY-250 + 'px';
+      //       star3.style.top = event.clientY-280 + 'px';
+      //   };
+      /*
+       * 3、按键 keypress
+       */
+      // 3-1、按方向键"上",keybtn盒子向上缓动移动100px,然后缓动回到原始位置。
+      // document.onkeyup = function(){
+      //     $('.hgg').style.cssText = 'animation: kk 1s ;';
+      // }
+      // 3-2、按Ctrl+C把盒子domA里面的内容存储在变量里面copyA,按Ctrl+V把copyA的内容显示到盒子domB里面
+    //   var contentA = "";
+    //   document.onkeydown = function () {
+    //     var eve = event;
+    //     console.log(event);
+    //     var copyA = $(".domA");
+    //     var copyB = $(".domB");
+    //     if (eve.ctrlKey && eve.keyCode == 67) {
+    //       contentA = copyA.innerHTML;
+    //       console.log(1111);
+    //       console.log(contentA);
+    //     }
+    //     if (eve.ctrlKey && eve.keyCode == 86) {
+    //       console.log(contentA);
+    //       if (contentA == "") {
+    //         alert("先按下ctrl + c");
+    //       } else {
+    //         copyB.innerHTML = contentA;
+    //       }
+    //     }
+    //   };
+       /*
+       * 4、改变 change
+       */
+      //页面中添加一个输入框，内部添加关键词，多个关键词使用单一空格隔开
+      //当每次输入完毕后，在控制台输出所有关键词构成的数组
+      /*
+      /*
+       * 5、失去焦点 blur
+       */
+      //页面中添加一个输入框，用来输入年龄
+      //当输入完毕后，判断年龄是否合法，如果合法在输入框下面使用绿色小字提示合法
+      //如果不合法，在输入框下面使用红色小子提示不合法
+
+      /*
+       * 6、获取焦点 focus
+       */
+      //请模拟出一个场景，并实现它
+
+      /*
+       * 7、元素加载、窗口加载 load
+       */
+      // 7-1、图片加载完后输出图片的宽高比
+
+      /*
+       * 8、窗口尺寸变化 resize
+       */
+      // 8-1、左大右小两个盒子,窗口尺寸变化时,如果窗口的宽小于1200px就把右侧盒子隐藏,左侧盒子宽变100%。
+      // 8-2、有个宽高比为2:1的盒子，在版心1200px里面沾满一行，当窗口缩小到1200px以下后，版心宽变成100%，盒子宽高比保持一致。
+
+      /*
+       * 9、页面滚动 scroll
+       */
+      // 9-1、上面LOGO，下面一排导航，当滚动条滚动到导航时，将导航设置为fixed的定位属性(吸顶)。(需要页面很长,出现滚动条)
+    </script>
+  </body>
+</html>

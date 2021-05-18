@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container .wrap {
+  width: 64%;
+  border: 1px solid #999;
+  margin: 0 500px;
+}
+
+.container .wrap header {
+  font-size: 2px;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #999;
+}
+
+.container .wrap .fenye {
+  width: 100%;
+  height: 388px;
+  border: 1px solid #999;
+}
+
+.container .wrap .fenye .good {
+  width: 72%;
+  height: 308px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .wrap .fenye .good .goods_box {
+  width: 208px;
+  height: 308px;
+  border: 1px solid #999;
+}
+
+.container .wrap .fenye .good .goods_box .imgg {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #999;
+  margin: 3px;
+}
+
+.container .wrap .fenye .good .goods_box .pric {
+  font-size: 22px;
+  color: red;
+}
+
+.container .wrap .fenye .good .goods_box .descrip {
+  font-size: 12px;
+}
+
+.container .wrap .fenye .peg {
+  width: 72%;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.container .wrap .fenye .peg .home {
+  float: left;
+  background-color: #e2dfdf;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px #999;
+          box-shadow: 0px 0px 4px #999;
+  margin-left: 120px;
+}
+
+.container .wrap .fenye .peg .previous {
+  float: left;
+  background-color: #e2dfdf;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px #999;
+          box-shadow: 0px 0px 4px #999;
+  margin-left: 20px;
+}
+
+.container .wrap .fenye .peg .first {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: #999;
+  border: black solid 1px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.container .wrap .fenye .peg .second {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: #999;
+  border: black solid 1px;
+  text-align: center;
+}
+
+.container .wrap .fenye .peg .third {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: #999;
+  border: black solid 1px;
+  text-align: center;
+}
+
+.container .wrap .fenye .peg .next {
+  float: left;
+  background-color: #e2dfdf;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px #999;
+          box-shadow: 0px 0px 4px #999;
+  margin-left: 50px;
+}
+
+.container .wrap .fenye .peg .back {
+  float: left;
+  background-color: #e2dfdf;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px #999;
+          box-shadow: 0px 0px 4px #999;
+  margin-left: 20px;
+}
+
+.container .wrap .fenye .peg .inpu {
+  float: left;
+  margin-left: 100px;
+}
+
+.container .wrap .fenye .peg .inpu .inpnum {
+  width: 15px;
+  padding-left: 5px;
+}
+
+.container .wrap .fenye .peg .jump {
+  float: left;
+  background-color: #e2dfdf;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px #999;
+          box-shadow: 0px 0px 4px #999;
+  margin-left: 20px;
+}
+
+.container .wrap .bigBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .wrap .bigBox .box {
+  width: 223px;
+  height: 410px;
+}
+
+.container .wrap .bigBox .box .img {
+  width: 100%;
+  height: 223px;
+  border: 1px solid #999;
+}
+
+.container .wrap .bigBox .box .pri {
+  font-size: 22px;
+  color: red;
+  margin-top: 10px;
+}
+
+.container .wrap .bigBox .box .content {
+  height: 50px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.container .wrap .bigBox .box .content .minTitle {
+  color: red;
+  font-size: 12px;
+}
+
+.container .wrap .bigBox .box .content .minContent {
+  font-size: 12px;
+  color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.container .wrap .bigBox .box .conmment {
+  height: 20px;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.container .wrap .bigBox .box .conmment .wan {
+  color: #474bb8;
+  font-weight: bold;
+}
+
+.container .wrap .bigBox .box .conmment .plun {
+  color: #999;
+}
+
+.container .wrap .bigBox .box .store {
+  height: 20px;
+  width: 100%;
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.container .wrap .bigBox .box .iconc {
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.container .wrap .bigBox .box .iconc .duibi {
+  height: 25px;
+  width: 55px;
+  border: 1px solid #999;
+  float: left;
+  line-height: 24px;
+  text-align: center;
+  border-right: none;
+}
+
+.container .wrap .bigBox .box .iconc .duibi .dui {
+  font-size: 13px;
+}
+
+.container .wrap .bigBox .box .iconc .guanzhu {
+  height: 25px;
+  width: 55px;
+  border: 1px solid #999;
+  border-right: none;
+  float: left;
+  line-height: 24px;
+  text-align: center;
+}
+
+.container .wrap .bigBox .box .iconc .guanzhu .guan {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container .wrap .bigBox .box .iconc .gouwu {
+  height: 25px;
+  width: 108px;
+  border: 1px solid #999;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .wrap .bigBox .box .iconc .gouwu .gou {
+  font-size: 20px;
+  color: red;
+}
+
+.container .wrap footer .title {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrap footer .title .all {
+  color: red;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.container .wrap footer .allCheck {
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  background-color: #F3F3F3;
+}
+
+.container .wrap footer .allCheck .checkAll {
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.container .wrap footer .allCheck .shang {
+  float: left;
+  margin-top: 10px;
+  margin-left: 130px;
+}
+
+.container .wrap footer .allCheck .danjia {
+  float: left;
+  margin-top: 10px;
+  margin-left: 550px;
+}
+
+.container .wrap footer .allCheck .shuliang {
+  float: left;
+  margin-top: 10px;
+  margin-left: 104px;
+}
+
+.container .wrap footer .allCheck .xiaoji {
+  float: left;
+  margin-top: 10px;
+  margin-left: 94px;
+}
+
+.container .wrap footer .allCheck .caozuo {
+  float: left;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.container .wrap footer .shopCard {
+  width: 100%;
+}
+
+.container .wrap footer .shopCard .shopcar {
+  height: 160px;
+  width: 100%;
+  border: 1px solid #999;
+}
+
+.container .wrap footer .shopCard .shopcar .check {
+  float: left;
+  width: 20px;
+  height: 50%;
+  margin-left: 28px;
+  margin-top: 45px;
+}
+
+.container .wrap footer .shopCard .shopcar .im {
+  border: 1px solid #999;
+  float: left;
+  width: 82px;
+  height: 82px;
+  margin-left: 8px;
+  margin-top: 45px;
+}
+
+.container .wrap footer .shopCard .shopcar .descr {
+  float: left;
+  width: 220px;
+  height: 82px;
+  margin-left: 8px;
+  margin-top: 45px;
+  font-size: 12px;
+}
+
+.container .wrap footer .shopCard .shopcar .price {
+  float: left;
+  width: 40px;
+  height: 82px;
+  margin-left: 390px;
+  margin-top: 45px;
+  font-size: 16px;
+}
+
+.container .wrap footer .shopCard .shopcar .num {
+  float: left;
+  margin-left: 80px;
+  margin-top: 45px;
+}
+
+.container .wrap footer .shopCard .shopcar .num .reduce {
+  width: 20px;
+  float: left;
+  background-color: #999;
+  text-align: center;
+  border-radius: 2px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.container .wrap footer .shopCard .shopcar .num .num1 {
+  height: 20px;
+  width: 30px;
+  float: left;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.container .wrap footer .shopCard .shopcar .num .add {
+  width: 20px;
+  float: left;
+  background-color: #999;
+  text-align: center;
+  border-radius: 2px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.container .wrap footer .shopCard .shopcar .smallpri {
+  float: left;
+  width: 40px;
+  height: 82px;
+  margin-left: 70px;
+  margin-top: 45px;
+  font-size: 16px;
+}
+
+.container .wrap footer .shopCard .shopcar .operation {
+  width: 60px;
+  float: left;
+  font-size: 12px;
+  margin-top: 45px;
+  margin-left: 60px;
+}
+
+.container .wrap footer .shopCard .shopcar .operation .dele {
+  cursor: pointer;
+}
+
+.container .wrap footer .last {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #666;
+  font-size: 12px;
+}
+
+.container .wrap footer .last .allc {
+  float: left;
+  margin-top: 17px;
+}
+
+.container .wrap footer .last .delAll {
+  float: left;
+  margin-top: 17px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container .wrap footer .last .guan {
+  float: left;
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+.container .wrap footer .last .clear {
+  float: left;
+  margin-top: 17px;
+  margin-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container .wrap footer .last .xuanNum {
+  float: left;
+  margin-top: 10px;
+  margin-left: 600px;
+}
+
+.container .wrap footer .last .allprice {
+  float: left;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+
+.container .wrap footer .last .jiesuan {
+  float: left;
+  width: 95px;
+  height: 100%;
+  border: 1px solid #999;
+  text-align: center;
+  margin-left: 59px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 45px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,254 @@
+<!--
+ * @author: TANG
+ * @create: 2021-04-17 14:17 PM
+ * @license: MIT
+ * @lastAuthor: TANG
+ * @lastEditTime: 2021-04-19 14:53 PM
+ * @desc: 计算器
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>计算器</title>
+    <!-- <link rel="stylesheet" href="sum.css" /> -->
+    <script src="sum.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .field {
+        width: 370px;
+        height: 500px;
+        margin: 0 auto;
+        border: 1px solid dimgrey;
+      }
+      input {
+        width: 80%;
+        height: 30px;
+        margin-top: 10px;
+        /* border: 1px solid dimgray; */
+        /* margin-top: 10px; */
+      }
+      .box {
+        width: 400px;
+        height: 400px;
+        /* border: 1px solid dimgray; */
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .num {
+        width: 90px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background-color: red;
+        color: white;
+        margin-left: 25px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgb(87, 31, 31);
+      }
+      .num:hover {
+        cursor: pointer;
+        background-color: green;
+      }
+      .symbol {
+        width: 90px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background-color: red;
+        color: white;
+        margin-left: 25px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgb(87, 31, 31);
+      }
+      .symbol:hover {
+        cursor: pointer;
+        background-color: green;
+      }
+      #deng {
+        width: 90px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background-color: red;
+        color: white;
+        margin-left: 25px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgb(87, 31, 31);
+      }
+      #deng:hover {
+        cursor: pointer;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="field">
+      <!-- <div id="fd"></div> -->
+      <input type="text" id="" name="" />
+      <div class="box">
+        <div class="num">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+        <div class="num">4</div>
+        <div class="num">5</div>
+        <div class="num">6</div>
+        <div class="num">7</div>
+        <div class="num">8</div>
+        <div class="num">9</div>
+        <div class="symbol">+</div>
+        <div class="symbol">-</div>
+        <div class="symbol">*</div>
+        <div class="symbol">/</div>
+        <div class="symbol">c</div>
+        <div id="deng">=</div>
+      </div>
+    </div>
+    <script>
+      "use strict";
+      const E = "=";
+      let [a, S, b, R] = ["", "", "", ""];
+      const iptE = document.querySelector("input");
+      let numE = document.getElementsByClassName("num");
+      let symbolE = document.getElementsByClassName("symbol");
+      let SE = document.getElementById("deng");
+      for (const e of numE) {
+        const eleData = e.innerHTML;
+        e.onclick = () => {
+          numClick(eleData);
+        };
+      }
+      for (const e of symbolE) {
+        const eleData = e.innerHTML;
+        e.onclick = () => {
+          bolClick(eleData);
+        };
+      }
+      function numClick(val) {
+        if (S == "" && b == "") {
+          a += val;
+        } else if (a != "" && S != "" && R == "") {
+          b += val;
+        } else if (a != "" && S != "" && b != "" && R != "") {
+          [a, S, b, R] = ["", "", "", ""];
+          a += val;
+        }
+        console.log({ a: a, S: S, b: b, E: E, R: R });
+      }
+      function bolClick(val) {
+        S = val;
+        console.log({ a: a, S: S, b: b, E: E, R: R });
+      }
+      SE.onclick = function () {
+        if (a != "" && S != "" && b != "") {
+          a = Number(a);
+          b = Number(b);
+          switch (S) {
+            case "+":
+              R = a + b;
+              break;
+            case "-":
+              R = a - b;
+              break;
+            case "*":
+              R = a * b;
+              break;
+            case "/":
+              if (b == 0) {
+                R = 0;
+              } else {
+                R = a / b;
+              }
+              break;
+          }
+        }
+        console.log({ a: a, S: S, b: b, E: E, R: R }, "计算结果");
+        const displayTem = `${a} ${S} ${b} ${E} ${R}`;
+        iptE.value = displayTem;
+      };
+    </script>
+    <!-- <script>
+        // var arr1 = ['c','del','%','/',7,8,9,'X',4,5,6,'-',1,2,3,'+','#',0,'.','='];
+        // function $(item){
+        //     return document.querySelector(item);
+        // }
+        // let arr2 = [];
+        // let comtem = document.querySelectorAll('.box1');
+        // for(let i = 0 ; i < comtem.length ; i++ ){
+        //     arr2.push(comtem[i]);
+        // }
+        // for( let i = 0; i<arr2.length;i++){
+        //     arr2[i].innerHTML = arr1[i]
+        //     arr2[i].onclick = ()=>{
+        //         console.log(111111);
+        //     }
+        // }
+        const E = '=';
+        let [a,S,b,R] =  ['','','',''];
+        const resultE = document.querySelector('.rusult');
+        let numE = document.getElementsByClassName('num');
+        let SE = document.getElementsByClassName('symbol');
+        let RE = document.getElementById('deng');
+        for (const e of numE){
+          const eleDate = e.innerHTML;
+          e.onclick = () =>{
+            numClick(eleDate);
+          }
+        }
+        for (const e of SE){
+          const eleDate = e.innerHTML;
+          e.onclick = () =>{
+            SClick(eleDate);
+          }
+        }
+        function numClick(val){
+          if(S === '' && b === ''){
+            a += val;
+          }else if(a != '' && S != '' && R != ''){
+            b+=val;
+          }else if(a !=''&& S != '' && b != '' && R != ''){
+            [a,S,b,R]=['','','',''];
+            a+=val;
+          }
+          console.log({a:a,S:S,b:b,E:E,R:R});
+        }
+        function SClick(val){
+          s = val;
+          console.log({a:a,S:S,b:b,E:E,R:R});
+        }
+        RE.onclick = () =>{
+          if(a!=''&&S!=''&&b!=''){
+            a = Number(a);
+            b = Number(b);
+            switch(S){
+              case '+':
+                R = a+b;
+                break;
+              case '-':
+                R = a-b;
+                break;
+              case '*':
+                R = a*b;
+                break;
+              case '/':
+                if(b===0){
+                  R = 0;
+                }else{
+                  R = a / b;
+                }
+                break;
+            }
+          }
+          console.log({a:a,S:S,b:b,E:E,R:R},'结果');
+          const displayTem =`${a} ${S} ${b} ${E} ${R}`;
+          resultE.innerHTML = displayTem;
+        }
+    </script> -->
+  </body>
+</html>

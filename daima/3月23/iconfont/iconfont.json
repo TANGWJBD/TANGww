@@ -1,0 +1,16 @@
+{
+  "id": "2439571",
+  "name": "3.23",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "912286",
+      "name": "表情",
+      "font_class": "biaoqing",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    }
+  ]
+}

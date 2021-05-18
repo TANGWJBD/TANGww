@@ -1,0 +1,277 @@
+.contact-bg{
+    width: 100%;
+    height: 3.39rem;
+    background:url(../img/banner3.png) no-repeat;
+    background-size: 7.5rem 5rem;
+    background-position-y: -1rem;
+}
+.vac-bar-p{
+    position: absolute;
+    width: 1.19rem;
+    height: 3px;
+    background-color: #14916A;
+    left: 3.2rem;
+    top: -0.01rem;
+}
+.contact-1{
+    width: 100%;
+    height: 2.29rem;
+    display: flex;
+    justify-content: center;
+    background-color: #14916A;
+    margin-top: 0.34rem;
+}
+.contact-1-1{
+    width: 4.78rem;
+    height: 2.29rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.contact-1-1-1{
+    width: 1.35rem;
+    height: 1.35rem;
+    background: url(../img/QR-code.png) no-repeat;
+    background-size: 1.35rem 1.35rem;
+}
+.contact-1-1-2{
+    width: 2.93rem;
+    height: 1.35rem;
+    /* border: 1px solid red; */
+}
+.contact-1-1-2-1{
+    width: 100%;
+    height: 46%;
+    /* border: 1px solid black; */
+    font-size: 0.35rem;
+    text-align: center;
+    line-height: 0.6rem;
+    margin-top: 0.16rem;
+    position: relative;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.contact-1-1-2-2{
+    width: 100%;
+    height: 43%;
+    /* border: 1px solid black; */
+    font-size: 0.23rem;
+    text-align: center;
+    line-height: 0.4rem;
+    color: black;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.contact-1-1-2-2 a{
+    color: white;
+}
+.contact-bar1{
+    position: absolute;
+    width: 0.26rem;
+    height: 0.02rem;
+    background-color: white;
+    left:0.03rem;
+    top: 0.31rem;
+}
+.contact-bar2{
+    position: absolute;
+    width: 0.26rem;
+    height: 0.02rem;
+    background-color: white;
+    right:0.03rem;
+    top: 0.31rem;
+}
+.contact-2{
+    width: 100%;
+    height: 2.99rem;
+    font-size: 0.23rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    background-color: #F6F6F6;
+}
+.contact-2-1{
+    width: 4.39rem;
+    /* border: 1px solid red; */
+    margin-left: 0.18rem;
+    height: 1.7rem;
+    margin-top: 0.3rem;
+}
+.contact-2-1 tr{
+    height: 0.43rem;
+}
+.contact-2-2{
+    width: 4.39rem;
+    /* border: 1px solid red; */
+    margin-left: 0.28rem;
+    margin-top: 0.2rem;
+    height: 0.66rem;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.contact-3{
+    width: 100%;
+    height: 6.58rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0.22rem;
+}
+.contact-3-1{
+    width: 100%;
+    height: 1.22rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.35rem;
+    color: #333;
+}
+.contact-3-1-1{
+    position: relative;
+}
+.contact-3-1-1-bar1{
+    position: absolute;
+    width: 0.42rem;
+    background-color: #333333;
+    left: -0.59rem;
+    height: 0.02rem;
+    top: 0.23rem;
+}
+.contact-3-1-1-bar2{
+    position: absolute;
+    width: 0.42rem;
+    background-color: #333333;
+    right: -0.59rem;
+    height: 0.02rem;
+    top: 0.23rem;
+}
+.contact-3-2{
+    height: 3.59rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.conatct-3-2-1{
+    width: 91.33%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: space-between; */
+}
+.contact-3-2-1-1-p{
+    width: 100%;
+    height: 0.68rem;
+    /* border: 1px solid red; */
+    /* margin-top: 0.2rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.24rem;
+}
+.contact-3-2-1-1-p a{
+    color: red;
+}
+.contact-3-2-1-1 a{
+    color: red;
+}
+.contact-3-2-1-1{
+    width: 100%;
+    height: 0.68rem;
+    /* border: 1px solid red; */
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.24rem;
+}
+.input-text{
+    flex-shrink: 0;
+}
+.contact-input{
+    width: 5.45rem;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.contact-input-content{
+    width: 95.81%;
+    height: 0.66rem;
+    font-size: 0.24rem;
+    padding-left: 0.2rem;
+    color: #AAAAAA;
+    
+    border: #999999 1px solid;
+}
+input::-webkit-input-placeholder{
+    
+    color: #AAAAAA;
+}
+.contact-input-content-p{
+    width: 99.9%;
+    height: 0.68rem;
+    font-size: 0.24rem;
+    padding-left: 0.2rem;
+    color: #AAAAAA;
+    border: #999999 1px solid;
+}
+
+select {
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("../img/triangle.png") no-repeat scroll right center transparent;
+    background-size: 0.48rem 0.16rem;
+    padding-right: 0.4rem;
+  }
+  
+  
+  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+  select::-ms-expand { display: none; }
+
+  .contact-3-3{
+    height: 1.77rem;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.24rem;
+}
+.button{
+    width: 2.72rem;
+    height: 0.6rem;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    line-height: 0.6rem;
+    border-radius: 0.29rem;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;    
+}
+.baidu-map{
+    width: 100%;
+    height: 5.32rem;
+    border: none;
+}
+.contact-td{
+    /* border: 1px solid red; */
+    width: 5rem;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+th{
+    width: 2rem;
+}
+table{
+    width: 5.7rem;
+}

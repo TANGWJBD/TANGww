@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* body{
+    -webkit-text-size-adjust:none
+} */
+.container{
+    width: 100%;
+    height: 800px;
+    padding-top: 200px;
+    background-color: blanchedalmond;
+}
+.wrap{
+    height: 7   95px;
+    width: 909px;
+    border: 2px solid #0000ff;
+    background-color: #f1c40f;
+    margin: 0px auto;
+}
+.img1{
+    height: 37px;
+    width: 235px;
+    margin: 0 auto;
+}
+.text2{
+    margin-top: 25px;
+}
+.bar{
+    height: 3px;
+    width: 47px;
+    margin: 0 auto;
+    background-color: #a9971b;
+}
+.text3{
+    text-align: center;
+    font-size: 9px;
+    margin-top: 23px;
+}
+.text4{
+    margin-top: 34px;
+}
+.text4::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.title{
+    border:2px solid #f4d248;
+    float: left;
+    font-size: 9px;
+    border-radius: 2px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 26px;
+}
+.first{
+    width: 37px;
+    /* border: none; */
+    background-color: #f7dc6f;
+    margin-left: 263px;
+}
+.first:hover{
+    background-color: #f1c40f;
+}
+.second{
+    width: 54px;
+}
+.second:hover{
+    background-color:#f7dc6f ;
+}
+.third{
+    width: 67px;
+}
+.third:hover{
+    background-color:#f7dc6f ;
+}
+.fourth{
+    width: 53px;
+}
+.fourth:hover{
+    background-color:#f7dc6f ;
+}
+.fifth{
+    width: 50px;
+}
+.fifth:hover{
+    background-color:#f7dc6f ;
+}
+.inside{
+    height: 228px;
+    width: 909px;
+    /* border: 1px solid red; */
+}
+.box{
+    /* border: 1px solid blue; */
+    height: 204px;
+    width: 204px;
+    float: left;
+    margin-left: 23px;
+    position: relative;
+}
+.box1{
+    margin-left: 8px;
+    position: relative;
+}
+.inside1{
+    margin-top: 26px;
+}
+.null{
+    position: absolute;
+    top: 0px;
+    width: 204px;
+    height: 204px;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+}
+.flash1{
+    color: white;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 59px;
+}
+.flash2{
+    color: white;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.flash3{
+    color: #f1c40f;
+    font-size: 40px;
+    float: left;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.box1:hover .null{
+    display: block;
+}   
+.box:hover .null{
+    display: block;
+}

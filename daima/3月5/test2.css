@@ -1,0 +1,64 @@
+.biggest{
+    width: 300px;
+    height: 405px;
+    border: 1px solid #fa3778;
+    
+}
+.first{
+    width: 100%;
+}
+.xin{
+    font-size: 14px;
+    line-height: 15px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #80b53f;
+    float: left;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.xing{
+    position: relative;
+    left: 5.2px;
+    top: 4.4px;
+}
+.pin{
+    font-size: 14px;
+    color: #999999;
+    float: right;
+    position: relative;
+    right: 10px;
+    top: 15px;
+}
+.second{
+    position: relative;
+    top: 42px;
+}
+.third{
+    width: 88%;
+    position: relative;
+    left: 15px;
+    top: 63px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.papa{
+    color: #949494;
+    font-size: 13px;
+}
+.forth{
+    height: 40px;
+    position: relative;
+    top: 83px;
+    left: 15px;
+    color: #fa3778;
+}
+.yuan{
+    font-size: 12.8px;
+    color: #999999;
+    position: relative;
+    top: 3.5px;
+    left: 5px;
+}

@@ -1,0 +1,46 @@
+.tu{
+    box-shadow: 0px 0px 15px rgb(184, 181, 181);
+    width: 1410px;
+    /* filter:saturate(200%); */
+}
+.text1{
+    font-weight:600;
+    font-size: 23px;
+}
+.text2{
+    font-size: 15px;
+    color: #999999;
+    position: relative;
+    top: 15px;
+    line-height: 26.5px;
+    text-indent: 20px;
+}
+.num{
+    color: #f1021e;
+}
+.text{
+    width: 645px;
+    height: 260px;
+    position: absolute;
+    top: 38px;
+    left: 706px;
+}
+.text3{
+    position: relative;
+    top: 35px;
+}
+button{
+    background-color: #dd001b;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+    background-color: #dd001b;
+    color: white;
+}
+a:hover{
+    color: greenyellow;
+}

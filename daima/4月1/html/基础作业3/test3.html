@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <input type="button" name="" id="but1" value="获取时间" onclick="fn1()">
+    <div class="timebox" style="border: 1px solid red;width: 50px;height: 20px;"></div>
+
+    <div id="call"></div>
+    <script>
+        //第一个
+        var but1 = document.getElementById('but1');
+        var box = document.querySelector('.timebox');
+        function fn1(){
+            var d = new Date();
+            var hourtime = d.getHours();
+            if(hourtime>=0 && hourtime<=5){
+                box.innerHTML = '凌晨';
+            }
+            else if(hourtime>=6 && hourtime<=11){
+                box.innerHTML = '上午'
+            }
+            else if(hourtime>=12 && hourtime<=17){
+                box.innerHTML = '下午'
+            }
+            else if(hourtime>=18 && hourtime<=23){
+                box.innerHTML = '晚上'
+            }
+        }
+
+
+        //第二个
+            function countDown(time) {
+            var now = +new Date();
+            var future = +new Date(time);
+            var rightTime = (future - now) / 1000;
+            var day = parseInt(rightTime / 60 / 60 / 24);
+            day = day < 10 ? '0' + day : day;
+            var hour = parseInt(rightTime / 60 / 60 % 24);
+            hour = hour < 10 ? '0' + hour : hour;
+            var minute = parseInt(rightTime / 60 % 60);
+            minute = minute < 10 ? '0' + minute : minute;
+            var second = parseInt(rightTime % 60);
+            second = second < 10 ? '0' + second : second;
+            return '还剩下：' + day +'天 ' + hour + ':' + minute + ':' + second;
+        }
+        var call = document.getElementById('call');
+        setInterval (function (){
+            call.innerHTML = countDown('2021-08-01 00:00:00');
+        },1000)
+    </script>
+</body>
+</html>

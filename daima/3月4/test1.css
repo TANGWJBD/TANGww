@@ -1,0 +1,67 @@
+.biggest{
+    width: 409px;
+    height: 598px;
+}
+.first{
+    width: 341px;
+    height: 391px;
+    background-color: #1cb19c;
+    margin-top: 24px;
+    margin-left: 32px;
+    box-shadow: 0px 1px 0px #45dac6;
+    ;
+}
+.second{
+    width: 341px;
+    height: 153px;
+    margin-left: 32px;
+    box-shadow: 5px 0px 5px -5px #dad7d7,
+                -5px 0px 5px -5px #dad7d7;
+}
+.text1{
+    color: rgb(112, 111, 111);
+    position: relative;
+    top: 40px;
+    left: 45px;
+    width: 252px;
+    font-size: 14px;
+}
+.text2{
+    color: #999999;
+    padding-top: 22px;
+    padding-left: 30px;
+    width: 298px;
+    font-size: 8px;
+}
+.zhouer{
+    align-content: center;
+    font-size: 15px;
+    padding-top: 67px;
+    padding-left: 150px;
+}
+.imgg{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 370px;
+    left: 159.5px;
+}
+.text1:hover{
+    color: white;
+}
+.hidden{
+    box-shadow: 0px 0px 15px black;
+    width: 341px;
+    height: 153px;
+    position: absolute;
+    top: 415px;
+    left: 40px;
+    display: none;
+}
+.second:hover+.hidden{
+    display: block;
+}
+.hidden:hover{
+    display: block;
+}

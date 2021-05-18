@@ -1,0 +1,147 @@
+<!--
+ * @author: TANG
+ * @create: 2021-04-20 08:49 AM
+ * @license: MIT
+ * @lastAuthor: TANG
+ * @lastEditTime: 2021-04-29 08:45 AM
+ * @desc: 购物车
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css.map" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <header></header>
+
+        <div class="fenye">
+          <div class="good">
+
+
+
+            <div class="goods_box">
+              <div class="imgg"></div>
+              <div class="pric">
+                ￥ 888
+              </div>
+              <div class="descrip">
+                果元素无线蓝牙耳机适用苹果iphoneX/XR/11/12pro双耳运动
+              </div>
+            </div>
+            <div class="goods_box">
+              <div class="imgg"></div>
+              <div class="pric">
+                ￥ 888
+              </div>
+              <div class="descrip">
+                果元素无线蓝牙耳机适用苹果iphoneX/XR/11/12pro双耳运动
+              </div>
+            </div>
+            <div class="goods_box">
+              <div class="imgg"></div>
+              <div class="pric">
+                ￥ 888
+              </div>
+              <div class="descrip">
+                果元素无线蓝牙耳机适用苹果iphoneX/XR/11/12pro双耳运动
+              </div>
+            </div>
+            <div class="goods_box">
+              <div class="imgg"></div>
+              <div class="pric">
+                ￥ 888
+              </div>
+              <div class="descrip">
+                果元素无线蓝牙耳机适用苹果iphoneX/XR/11/12pro双耳运动
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="peg">
+            <div class="home">首页</div>
+            <div class="previous">上一页</div>
+            <div class="first">1</div>
+            <div class="second">2</div>
+            <div class="third">3</div>
+            <div class="next">下一页</div>
+            <div class="back">尾页</div>
+            <div class="inpu">
+              <input type="text" name="" id="" value="1" class="inpnum">
+            </div>
+            <div class="jump">
+              跳转
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bigBox">
+          
+        </div>
+        <footer>
+          <div class="title">
+            <div class="all">全部商品</div>
+            <div class="adress">
+              配送至
+              <select name="" id="">
+                <option value="">四川省成都市高新科技孵化园</option>
+                <option value="">东北省黑龙江市日内瓦学校</option>
+              </select>
+            </div>
+          </div>
+          <div class="allCheck">
+            <div class="checkAll">
+              <input class="che" checked type="checkbox" name="" id="" onclick="checkAll(this)"/>
+              全选
+            </div>
+            <div class="shang">商品</div>
+            <div class="danjia">单价</div>
+            <div class="shuliang">数量</div>
+            <div class="xiaoji">小计</div>
+            <div class="caozuo">操作</div>
+          </div>
+          <div class="shopCard">
+            
+          </div>
+          <div class="last">
+            <div class="allc">
+              <input type="checkbox" checked class="che" name="" id="" onclick="checkAll(this)">&nbsp;全选
+            </div>
+            <div class="delAll" onclick="removeCheck()">
+              删除选中商品
+            </div>
+            <div class="guan">
+              移入关注
+            </div>
+            <div class="clear" onclick="removeAll()">
+              清理购物车
+            </div>
+            <div class="xuanNum">
+              已经选择<span class="footNum" style="color:red"></span>件商品^
+            </div>
+            <div class="allprice" style="width: 40px;">
+              总价：<span class="allPrice" style="color:red;font-size: 20px;">￥</span>
+            </div>
+            <div class="jiesuan">
+              去结算
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+
+  </body>
+</html>

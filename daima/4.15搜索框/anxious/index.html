@@ -1,0 +1,42 @@
+<!--
+ * @author: TANG
+ * @create: 2021-04-19 17:21 PM
+ * @license: MIT
+ * @lastAuthor: TANG
+ * @lastEditTime: 2021-04-19 17:38 PM
+ * @desc: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      axios
+        .get("http://192.168.0.36:5001")
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+      axios
+        .post("http://192.168.0.36:5001/api/login", {
+            cardNum: "569800006553",
+            cardPWD: "2323t32tgg",
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    </script>
+  </body>
+</html>

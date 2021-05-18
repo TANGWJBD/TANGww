@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    
+
+    <!-- 勾三股四 -->
+    <!-- <div class="bigbox">
+        <div class="tringle"></div>
+        <div class="inpp1">
+            <input type="text" name="" id="aa" placeholder="输入a" class="ip">
+        </div>
+        <div class="inpp2">
+            <input type="text" name="" id="bb" placeholder="输入b" class="ip">
+        </div>
+        <div class="inpp3">
+            <input type="text" name="" id="cc" placeholder="输入c" class="ip">
+        </div>
+        <div class="gett">
+            <button id='ji'>
+                计算
+            </button>
+        </div>
+    </div> -->
+
+
+    <!-- 计算器 -->
+    <!-- <div class="box">
+        <div class="box1">
+            <div class="minibox1">
+                <input type="text" name="" id="" class="inp1" placeholder="输入" disabled>
+            </div>
+            <div class="minibox2">
+                
+            </div>
+            <div class="minibox1">
+                
+            </div>
+            <div class="minibox1">
+                <div class="dengyu">
+                    =
+                </div>
+                <div class="Jvalue">
+                    <input type="text" name="" id="" disabled class="de" placeholder="等于">
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="butbox">
+                <div class="butClean">
+                    AC
+                </div>
+                <div class="butDele" onclick="fc()">
+                    dele
+                </div>
+                <div class="but">
+                    %
+                </div>
+                <div class="but">
+                    /
+                </div>
+            </div>
+
+            <div class="butbox">
+                <div class="but">
+                    7
+                </div>
+                <div class="but">
+                    8
+                </div>
+                <div class="but">
+                    9
+                </div>
+                <div class="but">
+                    *
+                </div>
+            </div>
+
+            <div class="butbox">
+                <div class="but">
+                    4
+                </div>
+                <div class="but">
+                    5
+                </div>
+                <div class="but">
+                    6
+                </div>
+                <div class="but">
+                    -
+                </div>
+            </div>
+
+            <div class="butbox">
+                <div class="but">
+                    1
+                </div>
+                <div class="but">
+                    2
+                </div>
+                <div class="but">
+                    3
+                </div>
+                <div class="but">
+                    +
+                </div>
+            </div>
+
+            <div class="butbox">
+                <div class="but">
+                    #
+                </div>
+                <div class="but">
+                    0
+                </div>
+                <div class="but">
+                    .
+                </div>
+                <div class="butGet">
+                    =
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- 数列求和 -->
+    <!-- <input type="text" name="" id="inp">
+    <div class="box11"></div>
+    <button class="buttt" onclick="fn()">计算数列求和</button> -->
+
+
+    <!-- 递归函数 -->
+    <!-- <input type="text" name="" id="inpc" placeholder="输入递归函数">
+    <button id="butt" onclick="fn1()">点击计算值</button>
+    <div class="div"></div> -->
+    
+    <!-- 计算薪酬 -->
+    <!-- <input type="text" name="" id="inpp" placeholder="输入年分，计算工资">
+    <button class="bb">点击计算</button> -->
+    
+
+
+
+    <script>
+        
+        
+
+        //1)
+        // function fn1(num1,num2){
+        //     return num1 + num2;
+        // }
+        // console.log(fn1(1,2));
+        // 箭头
+        // var sum = (num1,num2) => num1 + num2;
+        // console.log(sum(1,2));
+
+
+        //2)   1.
+        // var sum = 0;
+        // function fn2(){
+        //     for(let i = 0; i<arguments.length;i++){
+        //         sum += arguments[i];
+        //     }
+        //     return sum;
+        // }
+        // console.log(fn2(3,2,3,4,2,3));
+        //     2.
+        // var sum = 0;
+        // var arr =[0,43,54,7,8,78];
+        // function fn2(item){
+        //     for(let i = 0; i<item.length;i++){
+        //         sum += item[i];
+        //     }
+        //     return sum;
+        // }
+        // console.log(fn2(arr));
+
+
+        //3)
+        // var clean = document.querySelector('.butClean');
+        // var get = document.querySelector('.butGet');
+        // var inp1 = document.querySelector('.inp1');
+        // var de = document.querySelector('.de');
+        // var but = document.querySelectorAll('.but');
+        // var arr = [];
+        // var num;
+
+        // for(let i = 0;i<but.length;i++){
+        //     arr.push(but[i]);
+        // }
+        // arr.forEach(function(item){
+        //     item.onclick = function(){
+        //         var centerValue = item.innerHTML.trim(); 
+        //         inp1.value  += centerValue;
+        //     }
+        // });
+        // clean.onclick = function(){
+        //     inp1.value = '';
+        //     de.value = '';
+        // }
+        // function fc(){
+        //     var dele = document.querySelector('butDele');
+        //     let cc = inp1.value;
+        //     inp1.value = cc.substring(0,cc.length-1)
+        // }
+
+        // get.onclick = function(){
+        //     let dd = inp1.value;
+        //     var gg = eval(dd);
+        //     de.value = gg;
+        // }
+
+        // 4)
+
+        // var aa = document.getElementById('aa');
+        // var bb = document.getElementById('bb');
+        // var cc = document.getElementById('cc');
+        // var ji = document.getElementById('ji');
+        // ji.onclick = function(){
+        //     if(aa.value == ''){
+        //         let b = bb.value;
+        //         let c = cc.value;
+        //         let va = c*c - b*b;
+        //         let rva = Math.sqrt(va);
+        //         aa.value = rva; 
+        //     }
+        //     else if(bb.value == ''){
+        //         let a = aa.value;
+        //         let c = cc.value;
+        //         let va = c*c - a*a;
+        //         let rva = Math.sqrt(va);
+        //         bb.value = rva; 
+        //     }
+        //     else if(cc.value == ''){
+        //         let a = aa.value;
+        //         let b = bb.value;
+        //         let va = a*a + b*b;
+        //         let rva = Math.sqrt(va);
+        //         cc.value = rva; 
+        //     }
+        //     else{
+        //         alert('格式错误')
+        //     }
+        // }
+
+
+    // 5)
+    
+        // function fn(){
+        //     var inp = document.getElementById('inp');
+        //     var box = document.querySelector('.box11');
+        //     var arr = [];
+        //     var sum = 0;
+        //     for(let i =0;i<inp.value;i++){
+        //         if(i<=1){
+        //             arr[i] = 1;
+        //         }
+        //         else{
+        //             arr[i] = arr[i-1] + arr[i-2]
+        //         }
+        //     }
+        //     for(let j = 0;j<arr.length;j++){
+        //         sum += arr[j];
+        //     }
+        //     box.innerHTML = sum;
+        // }
+
+
+        // 6）
+        // var product = [
+        //     { "title": "手机", "price": 2200, "num": 2 },
+        //     { "title": "电饭煲", "price": 300, "num": 5 },
+        //     { "title": "电冰箱", "price": 5000, "num": 1 }
+        //     ];
+            // 1.1
+        // product.forEach(function(item,index){
+        //     if(item.title.indexOf('电饭煲') != -1){
+        //         console.log(index);
+        //     }
+        // })
+            // 1.2
+        // var index = product.filter(function(item){
+        //     return item.title == '电饭煲';
+        // });
+        // for(let i =0;i<product.length;i++){
+        //     if(product[i] == index[0]){
+        //         console.log(i);
+        //     }
+        // }
+        // 2.
+        // console.log(product.filter(function(item){
+        //    return item.price >300;
+        // }));
+        // 3.
+        // var prc = product.filter(function(item){
+        //    return item.price >1000;
+        // });
+        // prc.forEach(function(cc){
+        //     console.log(cc.title);
+        // });
+
+        // 7)
+
+
+        //8)
+        // var arr = [23,5,4,6,78,2,5,67,8,5,43,3];
+        // for(let j = 0 ; j < arr.length ; j++){
+        //     for(let i = 0; i < arr.length;i++){
+        //     if(arr[i] > arr[i+1]){
+        //         let huan = arr[i];
+        //         arr[i] = arr[i+1];
+        //         arr[i+1] = huan;
+        //     }
+        //    }
+        // }
+        // console.log(arr);
+
+        
+        // 9)
+        // var div = document.querySelector('.div');
+        // var inp = document.getElementById('inpc');
+        // var sum = 0;
+        // var center = 0;
+        // function fn1(){
+        //     function fn(center){
+        //     if(center == Number(inp.value)){
+        //         return;
+        //     }
+        //     center ++;
+        //     sum = sum + center;
+        //     return fn(center);
+        //     }
+        //     fn(center);
+        //     console.log(sum);
+        // }
+        
+
+        // 10)
+        // var inp = document.getElementById('inpp');
+        // var but = document.querySelector('.bb');
+        // var start = 6000;
+        // but.onclick = function(){
+        //     for(let i = 0 ; i<inp.value ; i++){
+        //         function fn(){
+        //         start = start + ((start * 8) / 100);
+        //         return start;
+        //         }
+        //         fn(start)
+        //     }
+        //     inp.value = start;
+        // }
+
+        
+        // 11）
+        // var userlist = [
+        //                 [1, "A根节点", 0],
+        //                 [2, "A二级节点1", 1],
+        //                 [3, "A二级节点2", 1],
+        //                 [4, "A二级节点3", 1],
+        //                 [5, "A三级节点1", 2],
+        //                 [6, "A三级节点2", 2],
+        //                 [7, "A三级节点3", 2],
+        //                 [8, "A三级节点4", 3],
+        //                 [9, "A三级节点5", 3],
+        //                 [10, "A三级节点6", 3],
+        //                 [11, "A三级节点7", 4],
+        //                 [12, "A三级节点8", 4],
+        //                 [13, "A三级节点9", 4],
+        //                 [14, "B根节点", 0],
+        //                 [15, "B二级节点", 14],
+        //                 [16,'B二级节点',14],
+        //                 [17,'B三级节点',15]
+        //                 ];
+
+        //简单写法，有序查找
+        // function foodroot(item){
+        //     if(userlist[item-1][2] == 0){
+        //         return userlist[item - 1];
+        //     }
+        //     return foodroot(userlist[item-1][2]);
+        // }
+        // console.log(foodroot(14));
+        //复杂写法，无序查找
+        // function foodroot(item){
+        //     if(userlist[item-1][2] == 0){
+        //         return userlist[item - 1];
+        //     }
+        //     if(userlist.filter(function(ittem){
+        //         return ittem[0] == userlist[item-1][2]
+        //     })[0][2] == 0){
+        //         return userlist[userlist[item-1][2]-1]
+        //     }
+        //     return foodroot(userlist.filter(function(ittem){
+        //         return ittem[0] == userlist[item-1][2]
+        //     })[0][2]);
+        // }
+        // console.log(foodroot(16));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+$re : 1px solid #999;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none;
+    .wrap{
+        width: 64%;
+        border: $re;
+        // height: 800px;
+        margin: 0 500px;
+        header{
+            font-size: 2px;
+            width: 100%;
+            height: 200px;
+            border: $re;
+        };
+        .fenye{
+            width: 100%;
+            height: 388px;
+            border: $re;
+            .good{
+                width: 72%;
+                height: 308px;
+                // border: $re;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                .goods_box{
+                    width: 208px;
+                    height: 308px;
+                    border: $re;
+                    .imgg{
+                        height: 200px;
+                        width: 200px;
+                        border: $re;
+                        margin: 3px;
+                    }
+                    .pric{
+                        font-size: 22px;
+                        color: red;
+                    }
+                    .descrip{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .peg{
+                width: 72%;
+                margin: 0 auto;
+                font-size: 14px;
+                margin-top: 40px;
+                .home{
+                    float: left;
+                    background-color: rgb(226, 223, 223);
+                    width: 60px;
+                    height: 20px;
+                    text-align: center;
+                    box-shadow: 0px 0px 4px #999;
+                    margin-left: 120px;
+                }
+                .previous{
+                    float: left;
+                    background-color: rgb(226, 223, 223);
+                    width: 60px;
+                    height: 20px;
+                    text-align: center;
+                    box-shadow: 0px 0px 4px #999;
+                    margin-left: 20px;
+                }
+                .first{
+                    float: left;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #999;
+                    border: black solid 1px;
+                    text-align: center;
+                    margin-left: 50px;
+                }
+                .second{
+                    float: left;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #999;
+                    border: black solid 1px;
+                    text-align: center;
+                }
+                .third{
+                    float: left;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #999;
+                    border: black solid 1px;
+                    text-align: center;
+                }
+                .next{
+                    float: left;
+                    background-color: rgb(226, 223, 223);
+                    width: 60px;
+                    height: 20px;
+                    text-align: center;
+                    box-shadow: 0px 0px 4px #999;
+                    margin-left: 50px;
+                }
+                .back{
+                    float: left;
+                    background-color: rgb(226, 223, 223);
+                    width: 60px;
+                    height: 20px;
+                    text-align: center;
+                    box-shadow: 0px 0px 4px #999;
+                    margin-left: 20px;
+                }
+                .inpu{
+                    float: left;
+                    margin-left: 100px;
+                    .inpnum{
+                        width: 15px;
+                        padding-left: 5px;
+                    }
+                }
+                .jump{
+                    float: left;
+                    background-color: rgb(226, 223, 223);
+                    width: 60px;
+                    height: 20px;
+                    text-align: center;
+                    box-shadow: 0px 0px 4px #999;
+                    margin-left: 20px;
+                }
+            }
+        }
+        .bigBox{
+            width: 100%;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .box{
+                width: 223px;
+                height: 410px;
+                // border: $re;
+                // margin: 5px;
+                
+                .img{
+                    width: 100%;
+                    height: 223px;
+                    border: $re;
+                }
+                .pri{
+                    font-size: 22px;
+                    color: red;
+                    // font-weight: bold;
+                    margin-top: 10px;
+                    }
+                .content{
+                    height: 50px;
+                    width: 100%;
+                    margin-top: 5px;
+                    // border: $re;
+                    .minTitle{
+                        color: red;
+                        font-size: 12px;
+
+                    }
+                    .minContent{
+                        font-size: 12px;
+                        color: #666;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                    }
+                }
+                .conmment{
+                    height: 20px;
+                    width: 100%;
+                    font-size: 12px;
+                    // border: $re;
+                    margin-top: 10px;
+                    .wan{
+                        color: #474bb8;
+                        font-weight: bold;
+                    }
+                    .plun{
+                        color: #999;
+                    }
+                }
+                .store{
+                    height: 20px;
+                    width: 100%;
+                    // border: $re;
+                    color: #999;
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+                .iconc{
+                    width: 100%;
+                    height: 30px;
+                    // border: $re;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    .duibi{
+                        height: 25px;
+                        width: 55px;
+                        border: 1px solid #999;
+                        float: left;
+                        line-height: 24px;
+                        text-align: center;
+                        border-right: none;
+                        .dui{
+                            font-size: 13px;
+                        }
+                    }
+                    .guanzhu{
+                        height: 25px;
+                        width: 55px;
+                        border: 1px solid #999;
+                        border-right: none;
+                        float: left;
+                        line-height: 24px;
+                        text-align: center;
+                        .guan{
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                    }
+                    .gouwu{
+                        height: 25px;
+                        width: 108px;
+                        border: 1px solid #999;
+                        float: left;
+                        text-align: center;
+                        cursor: pointer;
+                       .gou{
+                           font-size: 20px;
+                           color: red;
+                       } 
+                    }
+                }
+            }
+        }
+        footer{
+            .title{
+                width: 100%;
+                height: 40px;
+                // border: $re;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .all{
+                    color: red;
+                    font-weight: bold;
+                    font-size: 17px;
+                }
+            }
+            .allCheck{
+                width: 100%;
+                height: 40px;
+                // border: $re;
+                font-size: 12px;
+                background-color: #F3F3F3;
+                .checkAll{
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 30px;
+                }
+                .shang{
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 130px;
+                }
+                .danjia{
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 550px;
+                }
+                .shuliang{
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 104px;
+                }
+                .xiaoji{
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 94px;
+                }
+                .caozuo{
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 70px;
+                }
+            }
+            .shopCard{
+                width: 100%;
+                .shopcar{
+                    height: 160px;
+                    width: 100%;
+                    border: $re;
+                    .check{
+                        // border: $re;
+                        float: left;
+                        width: 20px;
+                        height: 50%;
+                        margin-left: 28px;
+                        margin-top: 45px;
+                    }
+                    .im{
+                        border: $re;
+                        float: left;
+                        width: 82px;
+                        height: 82px;
+                        margin-left: 8px;
+                        margin-top: 45px;
+                    }
+                    .descr{
+                        // border: $re;
+                        float: left;
+                        width: 220px;
+                        height: 82px;
+                        margin-left: 8px;
+                        margin-top: 45px;
+                        font-size: 12px;
+                    }
+                    .price{
+                        // border: $re;
+                        float: left;
+                        width: 40px;
+                        height: 82px;
+                        margin-left: 390px;
+                        margin-top: 45px;
+                        font-size: 16px;
+                    }
+                    .num{
+                        // border: $re;
+                        float: left;
+                        // width: 80px;
+                        margin-left: 80px;
+                        margin-top: 45px;
+                        .reduce{
+                            width: 20px;
+                            float: left;
+                            background-color: #999;
+                            text-align: center;
+                            border-radius: 2px;
+                            height: 23px;
+                            cursor: pointer;
+                        }
+                        .num1{
+                            height: 20px;
+                            width: 30px;
+                            float: left;
+                            border-left: none;
+                            border-right: none;
+                            border-top: 1px solid #333;
+                            border-bottom: 1px solid #333;
+                            text-align: center;
+                        }
+                        .add{
+                            width: 20px;
+                            float: left;
+                            background-color: #999;
+                            text-align: center;
+                            border-radius: 2px;
+                            height: 23px;
+                            cursor: pointer;
+                        }
+                    }
+                    .smallpri{
+                        // border: $re;
+                        float: left;
+                        width: 40px;
+                        height: 82px;
+                        margin-left: 70px;
+                        margin-top: 45px;
+                        font-size: 16px;
+                    }
+                    .operation{
+                        width: 60px;
+                        // border: $re;
+                        float: left;
+                        font-size: 12px;
+                        margin-top: 45px;
+                        margin-left: 60px;
+                        .dele{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .last{
+                width: 100%;
+                height: 50px;
+                border: 1px solid #666;
+                font-size: 12px;
+                .allc{
+                    float: left;
+                    margin-top: 17px;
+                }
+                .delAll{
+                    float: left;
+                    margin-top: 17px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+                .guan{
+                    float: left;
+                    margin-top: 17px;
+                    margin-left: 10px;
+                }
+                .clear{
+                    float: left;
+                    margin-top: 17px;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .xuanNum{
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 600px;
+                }
+                .allprice{
+                    float: left;
+                    margin-top: 2px;
+                    margin-left: 20px;
+                }
+                .jiesuan{
+                    float: left;
+                    width: 95px;
+                    height: 100%;
+                    border: $re;
+                    text-align: center;
+                    margin-left: 59px;
+                    background-color: red;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    line-height: 45px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

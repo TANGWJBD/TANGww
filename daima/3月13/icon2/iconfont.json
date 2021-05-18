@@ -1,0 +1,58 @@
+{
+  "id": "2418249",
+  "name": "3月13",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1903849",
+      "name": "web__谷歌验证",
+      "font_class": "web__gugeyanzheng",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "7141704",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "17447543",
+      "name": "ins",
+      "font_class": "23",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "19446213",
+      "name": "推特",
+      "font_class": "twitter",
+      "unicode": "ea90",
+      "unicode_decimal": 60048
+    },
+    {
+      "icon_id": "554348",
+      "name": "美元",
+      "font_class": "iconset0299",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "7159327",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "11745932",
+      "name": "钥匙",
+      "font_class": "yuechi",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

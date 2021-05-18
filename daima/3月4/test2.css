@@ -1,0 +1,40 @@
+.biggest{
+    width: 311px;
+    height: 376px;
+    box-shadow: 0px 0px 15px #d6d6d6;
+    margin: 30px 30px;
+}
+.imgg{
+    width: 311px;
+    height: 194px;
+    box-shadow:0px 1px 0px #d6d6d6;
+}
+.text1{
+    font-size: 13px;
+    width: 250px;
+    padding-top: 20px;
+    padding-left: 24px;
+    line-height: 24px;
+}
+.text2{
+    padding-top: 15px;
+    font-size: 10px;
+    padding-left: 24px;
+}
+.text21{
+    color: #adacac;
+}
+.text22{
+    color: red;
+}
+.text3{
+    width: 255px;
+    padding-left: 24px;
+    font-size: 14.5px;
+    padding-top: 8px;
+}
+.text1:hover{
+    color: #ccc;
+    text-decoration: underline;
+    cursor:pointer;
+}

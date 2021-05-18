@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    用户名：<input type="text" name="" id="username">
+    <br><br>
+    密码：<input type="text" name="" id="password">
+    <br><br>
+    <input type="button" name="" id="but1" value="点我获取数据" onclick="fn1()">
+    <div id="div1"></div>
+
+    <div id="div2">这个地方是第二个作业，请打开控制台查看</div>
+    <script>
+        //第一个
+        var username = document.getElementById('username');
+        var password = document.getElementById('password');
+        var but1 = document.getElementById('but1');
+        var div1 = document.querySelector('div1');
+        function fn1(){
+            var obj={
+                pasname:'',
+                uerword:''
+            }
+            console.log(name.value);
+            obj.pasname=username.value;
+            obj.uerword=password.value;
+            console.log(obj);
+            div1.innerHTML=JSON.stringify(obj);
+        }
+        //第二个
+        var div2 = document.querySelector('#div2');
+        var num = 111111;
+        var str1 = String(num);//强制转换
+        var str2 = num + '';//隐式转换
+        var str3 = num.toString();//内置API转换
+        console.log(str1,str2,str3);
+
+        var str = '111111';
+        var num1 = Number(str);//强制转换
+        var num2 = str++;//隐式转换
+        var num3 = parseInt(str);//内置API转换
+        console.log(num1,num2,num3);
+
+
+
+    </script>
+</body>
+</html>

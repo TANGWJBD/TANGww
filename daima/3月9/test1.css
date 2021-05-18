@@ -1,0 +1,205 @@
+.frame{
+    border: 1px solid rgb(0,0,255);
+    height: 181px;
+    width: 700px;
+}
+.inside{
+    float: left;
+    width: 19%;
+    height: 100%;
+}
+.inside_special{
+    float: left;
+    width: 19%;
+    height: 100%;
+}
+
+/* -----------------第一个三角形--------------- */
+
+.triangle1{
+    border: 10px solid transparent;
+    width: 0px;
+    height: 0px;
+    border-bottom-color: rgb(255,102,0);
+    position: relative;
+    left: 43px;
+    top: -9px;
+    display: none;
+}
+.button1{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 60px;
+    left: 22px;
+    width: 60px;
+    /* display: none; */
+}
+.text1{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255,102,0);
+    color: white;
+    width: 60px;
+    height: 50px;
+    
+}
+.button1:hover+.triangle1{
+    display: block;
+}
+
+/* -----------------第二个三角形--------------- */
+
+.triangle2{
+    border: 10px solid transparent;
+    width: 0px;
+    height: 0px;
+    border-top-color: rgb(255,102,0);
+    position: relative;
+    left: 53px;
+    top: 60px;
+    display: none;
+}
+.button2{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 60px;
+    left: 22px;
+    width: 80px;
+    /* display: none; */
+}
+.text2{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255,102,0);
+    color: white;
+    width: 80px;
+    height: 50px;
+    
+}
+.button2:hover+.triangle2{
+    display: block;
+}
+
+/* -----------------第三个三角形--------------- */
+
+.triangle3{
+    border: 10px solid transparent;
+    width: 0px;
+    height: 0px;
+    border-right-color: rgb(255,102,0);
+    position: relative;
+    left: 22px;
+    top: 26px;
+    display: none;
+}
+.button3{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 60px;
+    left: 42px;
+    width: 80px;
+    /* display: none; */
+}
+.text3{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255,102,0);
+    color: white;
+    width: 80px;
+    height: 50px;
+    
+}
+.button3:hover+.triangle3{
+    display: block;
+}
+
+/* -----------------第四个三角形--------------- */
+
+.triangle4{
+    border: 10px solid transparent;
+    width: 0px;
+    height: 0px;
+    border-bottom-color: rgb(255,102,0);
+    position: relative;
+    left: 73px;
+    top: -9px;
+    /* display: none; */
+}
+.button4{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 60px;
+    left: 54px;
+    width: 60px;
+    /* display: none; */
+}
+.text4{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255,102,0);
+    color: white;
+    width: 60px;
+    height: 50px;
+    
+}
+.button4:hover+.triangle4{
+    display: block;
+}
+.background{
+    background-color: rgb(102,102,102);
+    height: 181px;
+    width: 134px;
+    position: absolute;
+    top: -60px;
+    left: -40px;
+    z-index: -1;
+    display: none;
+}
+.link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.text4:hover+.background{
+    display: block;
+}
+
+/* -----------------第四个三角形--------------- */
+
+/* .triangle5{
+    border: 10px solid transparent;
+    width: 0px;
+    height: 0px;
+    border-bottom-color: rgb(255,102,0);
+    position: relative;
+    left: 63px;
+    top: -9px;
+    display: none; 
+} */
+.button5{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 60px;
+    left: 44px;
+    width: 60px;
+    /* display: none; */
+}
+.text5{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255,102,0);
+    color: white;
+    width: 60px;
+    height: 50px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(85,26,139);
+}
+/* .button5:hover+.triangle5{
+    display: block;
+} */

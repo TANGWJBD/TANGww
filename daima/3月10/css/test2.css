@@ -1,0 +1,295 @@
+.frame{
+    width: 1348px;
+    height:830px;
+    /* border: 1px solid black; */
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 15px #999999;
+    position: relative;
+    left: 200px;
+    top: 70px;
+}
+.correct{
+    width: 1248px;
+    height: 730px;
+    /* border: 1px solid purple; */
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+.nav{
+    width: 1190px;
+    height: 66px;
+    margin-left: 30px;
+    /* border: 1px solid red; */
+}
+.text1{
+    float: left;
+    font-size: 20px;
+}
+.text2{
+    float: right;
+    font-size: 16px;
+    position: relative;
+    top: 4px;
+    width: 330px;
+    height: 100%;
+    /* border: 1px solid pink; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #f32196;
+}
+/* <————————————————————————————————导航超链接——————————————————————————————> */
+
+.box1{
+    float: left;
+}
+.box2{
+    float: left;
+    position: relative;
+    left: 28px;
+}
+.box3{
+    float: left;
+    position: relative;
+    left: 31px;
+}
+.box4{
+    float: left;
+    position: relative;
+    left: 59px;
+}
+.box5{
+    float: left;
+    position: relative;
+    left: 87px;
+}
+/* <————————————————————————————————横线——————————————————————————————> */
+.bar1{
+    width: 32px;
+    height: 2px;
+    background-color: #f32196;
+    display: none;
+    margin-top: 7px;
+}
+.bar2{
+    width: 32px;
+    height: 2px;
+    background-color: #f32196;
+    display: none;
+    margin-top: 7px;
+}
+.bar3{
+    width: 48px;
+    height: 2px;
+    background-color: #f32196;
+    display: none;
+    margin-top: 7px;
+}
+.bar4{
+    width: 32px;
+    height: 2px;
+    background-color: #f32196;
+    display: none;
+    margin-top: 7px;
+}
+.bar5{
+    width: 96px;
+    height: 2px;
+    background-color: #f32196;
+    display: none;
+    margin-top: 7px;
+}
+/* <————————————————————————————————超链接移动显示——————————————————————————————> */
+.joke1:hover+.bar1{
+    display: block;
+}
+.joke2:hover+.bar2{
+    display: block;
+}
+.joke3:hover+.bar3{
+    display: block;
+}
+.joke4:hover+.bar4{
+    display: block;
+}
+.joke5:hover+.bar5{
+    display: block;
+}
+/* <————————————————————————————————图片模块——————————————————————————————> */
+.first{
+    width: 1190px;
+    height: 329px;
+    /* border: 1px solid blue; */
+    margin-left: 30px;
+}
+.second{
+    width: 1190px;
+    height: 329px;
+    /* border: 1px solid blue; */
+    position: relative;
+    top: 15px;
+    margin-left: 30px;
+}
+.under_bo{
+    height: 328px;
+    width: 224px;
+    /* border: 1px solid rgb(68, 68, 40); */
+    float: left;
+    background-color: white;
+}
+.under_box{
+    height: 328px;
+    width: 224px;
+    /* border: 1px solid rgb(68, 68, 40); */
+    float: left;
+    margin-left: 15px;
+    background-color: white;
+}
+.under_boxx{
+    height: 328px;
+    width: 224px;
+    /* border: 1px solid rgb(68, 68, 40); */
+    float: left;
+    margin-left: 15px;
+}
+.under_text1{
+    font-size: 15px;
+    width: 224px;
+    text-align: center;
+}
+.under_text2{
+    font-size: 11px;
+    width: 224px;
+    text-align: center;
+    position: relative;
+    top: 3px;
+}
+.under_text3{
+    font-size: 11px;
+    color: #f96868;
+    width: 224px;
+    text-align: center;
+    position: relative;
+    top: 14px;
+}
+.small_imgs1{
+    width: 100%;
+    height: 155px;
+    /* border: 1px solid black; */
+    background-color: white;
+}
+.small_imgs2{
+    width: 100%;
+    height: 155px;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 15px;
+    background-color: white;
+}
+.imgss1{
+    position: relative;
+    left: 12px;
+    top: 40px;
+}
+.imgss2{
+    position: relative;
+    left: 12px;
+    top: 54px;
+}
+.under_TEXT1{
+    width: 100px;
+    height: 20px;
+    /* border: 1px solid red; */
+    float: left;
+    position: relative;
+    top: 60px;
+    left: 20px;
+}
+.under_TEXT2{
+    width: 100px;
+    height: 23px;
+    /* border: 1px solid red; */
+    float: left;
+    position: relative;
+    top: 56px;
+    left: 25px;
+}
+.red{
+    color: #f96868;
+    font-size: 11px;
+}
+.imgs_small{
+    width: 110px;
+    height: 100%;
+    /* border: red 1px solid; */
+    float: left;
+}
+.mei{
+    text-decoration: none;
+    font-size: 13px;
+}
+.liu{
+    text-decoration: none;
+    font-size: large;
+}
+.niubi1{
+    height: 15px;
+    width: 180px;
+    border: 1px solid red;
+    position: absolute;
+    top: 305px;
+    left: 290px;
+}
+.niubi2{
+    height: 11px;
+    width: 107px;
+    border: 1px solid red;
+    position: absolute;
+    top: 328px;
+    left: 326px;
+}
+/* <———————————————————————————————鼠标触发效果——————————————————————————————> */
+
+.under_bo:hover{
+    box-shadow: 5px 18px 16px #cccbcb,
+                -5px 18px 16px #cccbcb;
+}
+.under_box:hover{
+    box-shadow: 5px 18px 16px #cccbcb,
+                -5px 18px 16px #cccbcb;
+}
+.under_text1:hover,.under_text2:hover{
+    color: red;
+    cursor: pointer;
+}
+.under_text1:hover+.under_text2{
+    color: red;
+    cursor: pointer;
+}
+.under_text2:hover+.under_text1{
+    color: red;
+    cursor: pointer;
+}
+.small_imgs1:hover{
+    box-shadow: 5px 18px 16px #cccbcb,
+                -5px 18px 16px #cccbcb;
+}
+.under_TEXT1:hover{
+    color: red;
+    cursor: pointer;
+}
+.small_imgs2:hover{
+    box-shadow: 5px 18px 16px #cccbcb,
+                -5px 18px 16px #cccbcb;
+}
+.under_TEXT2:hover{
+    color: red;
+    cursor: pointer;
+}
+/* .niubi2:hover+.under_box .under_text1{
+    background-color: red;
+} */

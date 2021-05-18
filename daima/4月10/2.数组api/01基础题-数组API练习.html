@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS数组操作对象作业</title>
+
+</head>
+<body>
+    <input type="checkbox" name="" class="checkbox">
+    <input type="checkbox" name="" class="checkbox">
+    <input type="checkbox" name="" class="checkbox">
+    <input type="button" name="" id="butt" onclick="fnbut()" value="点我知道是否全选">
+    <!-- <input type="button" name="" id="" onclick="screening7()"> -->
+    <script>
+        /*
+         * 15、去界面添加一组checkbox，任意勾选其中的某项或者全部，添加一个按钮，
+         * 点击按钮分别做如下判断：
+         * 15-1、使用every判断checkbox是否全选
+         * 15-2、使用some判断checkbox是否全选
+         */
+        
+
+
+
+        var news = [
+            {"title":"我是新闻标题","time":"2020-03-31","read":30,"user":[1,2,4]},
+            {"title":"我是新闻标题2我是新闻标题","time":"2020-03-31","read":50,"user":[2,5]},
+            {"title":"我是新闻标题3","time":"2020-03-31","read":70005,"user":[1,2,3,4,5]},
+            {"title":"我是新闻标题4我是新闻标题","time":"2020-03-31","read":80,"user":[2,7]},
+            {"title":"我是新闻标题5","time":"2020-03-31","read":100,"user":[2,8,10]},
+            {"title":"我是新闻标题6","time":"2020-04-28","read":10050,"user":[2,8,10]}
+        ];
+        /*
+         * 1、使用filter 过滤出阅读数大于50的数据
+         */
+        // function screening1(item1){
+        //     return item1.read > 50;  
+        // }
+        // console.log(news.filter(screening1));
+        /*
+         * 2、使用filter 过滤出user包含5的数据
+         */
+        // function screening2(item2){
+        //     return item2.user.indexOf(5) != -1;
+        // }
+        // console.log(news.filter(screening2));
+        /*
+         * 3、使用filter 过滤出user数量大于3的数据
+         */
+        // function screening3(item3){
+        //     return item3.user.length > 3;
+        // }
+        // console.log(news.filter(screening3));
+        /*
+         * 4、使用map得到一个新数组： 如果title长度大于10，就把title取前10个字符。
+         */
+        // function screening4(item4){
+        //     if(item4.title.length > 10){
+        //         return item4.title.substring(0,10);
+        //     }else{
+        //         return item4.title;
+        //     }
+        // }
+        // console.log(news.map(screening4));
+        /*
+         * 5、使用map得到一个新数组： 如果阅读数大于10000,就把阅读数设置为1w+、2w+、3w+...。
+         */
+        // function screening5(item5){
+        //     if(item5.read > 10000){
+        //         var center = (item5.read+'').substring(0,1);
+        //         return item5.read = center + 'W+';
+        //     }
+        //     else{
+        //         return item5.read;
+        //     }
+        // }
+        // console.log(news.map(screening5));
+
+        //电器、家用、文具属于一级栏目，后面的属于二级栏目。
+
+        var elec = [
+            {'app':['refrigerator','TV','kitchen'],'navname':'电器'},
+            {'app':['knife','mirror','mop'],'navname':'家用'},
+            {'app':['triangle','eraser','pencil'],'navname':'文具'}
+        ]
+        // console.log(elec);
+        
+
+        /*
+         * 6、使用filter 返回二级栏目中有"镜子"的一级栏目。
+         */
+        // function screening6(item6){
+        //     for(let i = 0;i<item6.app.length-1;i++){
+        //         if(item6.app[i].indexOf('mirror') != -1){
+        //             return item6;
+        //         }
+        //     }
+        // }
+        // console.log(elec.filter(screening6)[0].navname);
+        // console.log('--------------------------------------');
+        /*
+         * 7、使用for循环嵌套，输出二级列表如图：二级列表.png
+         */
+        // function screening7(){
+        //     for(let i = 0;i <= elec.length-1;i++){
+        //         console.log(elec[i].navname + ':');
+        //         for(let j =0;j <= elec[i].app.length-1;j++){
+        //             console.log(elec[i].app[j]);
+        //         }
+        //         console.log('*************');
+        //     }
+        //     return '-----------------------------------------';
+        // }
+        // console.log(screening7());
+        /*
+         * 8、使用forEach嵌套，输出二级列表如图：二级列表.png
+         */
+        //  console.log('---------------------');
+        // console.log(elec.forEach(function(item9){
+        //     console.log(item9.navname + ':');
+        //     item9.app.forEach(function(item91){
+        //         console.log(item91);
+        //     })
+        // }));
+        // console.log('---------------------');
+        var tag = ["a","span","b","i"];
+        /*
+         * 9、使用join方法把tag的所有项用#连接成一个字符串
+         */
+        // console.log(tag.join('#'));
+        /*
+         * 10、组装每项对应的标签对，并一起输出到页面，每个标签中间有个<br>。
+         * 10-1、使用map返回一个新数组arr,将标签名称拼接为标签对，如：a => <a></a>, span => <span></span>...
+         * 10-2、使用join把新数组arr拼接为一个字符串str，使用<br>分隔。
+         * 10-3、使用innerHTML把最终的内容输出到页面。
+         */
+        
+
+        var year = ['1995','2004','2014','2018'];
+        /*
+         * 11、使用push把"2019"添加进year数组。
+         */
+        // year.push('2019');
+        // console.log(year);
+        /*
+         * 12、使用push把今年的年份作为字符串添加进year数组。（不能直接写2020）。
+         */
+        // var tt = new Date();
+        // var newyear = tt.getFullYear();
+        // year.push(newyear.toString())
+        // console.log(year);
+        //有一组人(A组)，他们的年龄分别是：18,19,20,21,22
+        var age = [18,19,20,21,22,80];
+        /*
+         * 13、使用every判断A组是否全都成年了。
+         */
+        // function screening8(item8){
+        //     return item8 < 18;
+        // }
+        // if(!age.every(screening8)){
+        //     console.log('都成年了');
+        // }
+        // else{
+        //     console.log('有未成年');
+        // }
+        /*
+         * 14、使用some判断A组是否有老年人。
+         */
+            // function screening10(item10){
+            //     return item10>50;
+            // }
+            // if(age.some(screening10)){
+            //     console.log('有老年人');
+            // }
+            // else{
+            //     console.log('没有老年人');
+            // }
+        /*
+         * 15、去界面添加一组checkbox，任意勾选其中的某项或者全部，添加一个按钮，
+         * 点击按钮分别做如下判断：
+         * 15-1、使用every判断checkbox是否全选
+         * 15-2、使用some判断checkbox是否全选
+         */
+        // every
+        // var checkbox = document.querySelectorAll('.checkbox');
+        // var listArr = [...checkbox];
+        // function fnbut(){
+        //     var flag = listArr.every(function(item11){
+        //         return item11.checked == true;
+        //     });
+        //     if(flag){
+        //         console.log('全部选中');
+        //     }
+        //     else{
+        //         console.log('未全选中');
+        //     }
+        // }
+        // function fnbut(){
+        //     var swag = listArr.some(function(item12){
+               
+        //         return item12.checked == false;
+        //     });
+        //     if(swag){
+        //         console.log('未全选啊');
+        //     }
+        //     else{
+        //         console.log('全选了');
+        //     }
+        // }
+        /*
+         * 16、随机数
+         */
+        //* 16-1、创建一个0~10的随机数
+        // console.log(Math.ceil((Math.random())*10));
+
+        //* 16-2、创建一个5~10的随机数
+            function randomnum(minnum,maxnum){
+                return Math.floor(Math.random()*(maxnum-minnum+1)+minnum);
+            }
+            // console.log(randomnum(5,10));
+        //* 16-3、var letter = "abcdefghijklmnopqrstuvwxyz", 随机生成一个字母。
+        // var letter = "abcdefghijklmnopqrstuvwxyz";
+        // var letterArr = letter.split('');
+        // console.log(letterArr[randomnum(0,letterArr.length-1)]);
+
+
+        //* 16-4、var letter = "abcdefghijklmnopqrstuvwxyz", 随机生成一个2位数的字符串。
+        // console.log(letterArr[randomnum(0,letterArr.length-1)] + letterArr[randomnum(0,letterArr.length-1)]);
+        /*
+         * 16-4、var letter = "abcdefghijklmnopqrstuvwxyz";
+         * var num = "0123456789";
+         * 随机生成1位字母跟1位数字组成的字符串。
+         */
+        //  var num = "0123456789";
+        //  var numArr = num.split('');
+        //  function randomnum(minum,maxum){
+        //         return Math.floor(Math.random()*(maxum-minum+1)+minum);
+        //     }
+        // var centerNum = randomnum(1,2);
+        // if(centerNum == 1){
+        //     console.log(letterArr[randomnum(0,letterArr.length-1)] + numArr[randomnum(0,numArr.length-1)]);
+        // }
+        // else{
+        //     console.log(numArr[randomnum(0,numArr.length-1)] + letterArr[randomnum(0,letterArr.length-1)]);
+        // }
+        /*
+         * 16-5、var letter = "abcdefghijklmnopqrstuvwxyz0123456789";
+         * 随机生成一个4位的字符串。
+         */
+        //  var letter = "abcdefghijklmnopqrstuvwxyz0123456789";
+        //  var letterArr = letter.split('');
+        //  console.log(letterArr[randomnum(0,letterArr.length-1)] + letterArr[randomnum(0,letterArr.length-1)] + letterArr[randomnum(0,letterArr.length-1)] + letterArr[randomnum(0,letterArr.length-1)]);
+
+        //使用正确的数据分别写出下列数据转换的表达式
+        /*
+        字符串转数字
+        字符串转JSON
+        字符串转数组
+        数字转字符串
+        JSON转字符串
+        数组转字符串
+        */
+    </script>
+
+</body>
+</html>

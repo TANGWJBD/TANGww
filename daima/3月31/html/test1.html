@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/test1.css">
+</head>
+<body>
+    <div class="a-1" id="a-2">
+        F
+    </div>
+    <div class="a-3" id="a-4">
+        N
+    </div>
+    <div class="a-5" id="a-6">
+        S
+    </div>
+
+    <input type="button" name="" id="w-1" onclick="f1()" value="点我啊" class="button-1">
+    <input type="button" name=""  onclick="f2()" value="点我啊" class="button-2">
+    <input type="button" name=""  onclick="f3()" value="点我啊" class="button-3">
+    <input type="button" name="" id="w-2" onclick="f4()" value="点我啊" class="button-3">
+    <input type="button" name="" id="w-3" onclick="f5()" value="点我变色" class="button-3">
+    <input type="button" name="" id="w-6" onclick="f6()" value="点我变色" class="button-3">
+
+    <input type="button" name="" id="w-7" onclick="f7()" value="点我变身">
+    <div id="k-1">
+
+    </div>
+    <div style="border: 1px solid red; width: 200px;height: 50px; font-size: 12px;overflow: hidden;" id="wo">
+        <input class="" type="button" value="点我加鸡腿" onclick="f10()">
+    </div>
+    <input  type="text" value="" id="sss">
+	<input type="button"  value="按钮3" id="opp" onclick="an()">
+
+    <div class="box4"></div>
+	<input id='input4' type='text' value=''>
+	<input type='button' id='btn4' value='按钮4' onclick="bn()">
+
+    <div class='box5'></div>
+	<input id='btn5' type='text' value='输入文本' onblur="cn()">
+
+    <div class='box6' style="border: 1px solid red; height: 100px; width: 100px;"></div>
+    <input id='input6' type='text' value=''>
+    <div class='box6-2' style="border: 1px solid blue; height: 100px; width: 100px;"></div>
+    <input id='input6-2' type='text' value=''>
+    <input id='btn6' type='text' value='同时获取' onclick="dn()">
+
+    <script>
+        function dn(){
+            var ccc = document.getElementById('input6');
+            var bbb = document.getElementById('input6-2');
+            var ddd = document.querySelector('.box6');
+            var eee = document.querySelector('.box6-2');
+            var v1 = ccc.value;
+            var v2 = bbb.value;
+            ddd.innerText = v1;
+            eee.innerText = v2;
+        }
+
+
+
+
+        function cn(){
+            var ppp = document.getElementById('btn5');
+            var pp = ppp.value;
+            var aa = document.querySelector('.box5');
+            aa.innerText = pp;
+        }
+
+        function bn(){
+            var eeee = document.getElementById('input4');
+            var va = eeee.value;
+            var rrrr = document.querySelector('.box4');
+            rrrr.innerText = va;
+        }
+
+        function an(){
+            var oww = document.getElementById("sss");
+            var ow = document.getElementById("opp");
+            var er = ow.value;
+            oww.value = er;
+        }
+
+        var gg = document.getElementById('a-2');
+        console.log(gg);
+        var kk = document.getElementsByTagName('div');
+        console.log(kk[0]);
+        var ss = document.querySelector('div.a-3');
+        console.log(ss);
+        var nn = document.querySelectorAll('div');
+        console.log(nn[2]);
+        var qq = document.getElementsByClassName('a-5');
+        console.log(qq);    
+        function f1(){
+            alert("你点我干嘛！淦")
+        }
+        var aa = document.getElementById('w-1');
+        // aa.nodeValue = qq.childNode[0];
+        function f2(){
+            aa.value = '我变了';
+            alert('发现没，我旁边那哥们儿变了')
+        }
+        
+        function f3(){
+            alert('点我，第一个盒子就变了啊，淦');
+            kk[0].innerText = 'VC';
+        }
+        function f4(){
+            document.getElementById('a-6').innerHTML = '???';
+            alert('第三个盒子内容变了')
+        }
+        function f5(){
+            document.getElementById("w-3").style.backgroundColor = "green";
+        }
+        function f6(){
+            document.getElementById("w-6").style.cssText = "background-color:yellow;font-size:12px;"
+        }
+        
+        function f7(){
+            var wq = document.getElementById('w-7');
+            wq.classList.add('button-3')
+        }
+        var num = 1+2;
+        document.write(num);
+
+        function f10(){
+            var qqqqq =  document.getElementById("wo");
+            var wwwww = document.createTextNode("🍗");
+            qqqqq.appendChild(wwwww);
+        }
+    </script>
+</body>
+</html>

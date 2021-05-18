@@ -1,0 +1,83 @@
+.biggest{
+    box-shadow: 0px 0px 15px #999999;
+    width: 803px;
+    height: 616px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+.tu{
+    float: left;
+}
+.text{
+    float: left;
+    height: 616px;
+    width:  333px;
+    position: relative;
+    left: 20px;
+}
+.text1{
+    text-align: right;
+    position: relative;
+    top: 20px;
+    right: 150px;
+    color: #cac8c8;
+    font-size: 30px;
+    font-weight:100;
+    transform: scale(1.5,1);
+}
+.text2{
+    font-size: 23px;
+    font-weight:100;
+    position: relative;
+    top: 65px;
+}
+.text3{
+    font-size: 13px;
+    position: relative;
+    top: 85px;
+}
+.text4{
+    font-size: 13px;
+    position: relative;
+    top: 105px;
+}
+.form1{
+    position: relative;
+    top: 125px;
+}
+.form2{
+    position: relative;
+    top: 147px;
+}.form3{
+    position: relative;
+    top: 165px;
+}.form4{
+    position: relative;
+    top: 185px;
+}.form5{
+    position: relative;
+    top: 205px;
+    font-size: 17px;
+    width: 277px;
+    height: 30px;
+    background-color: #c1b497;
+    border: none;
+    color: white;
+}.form6{
+    position: relative;
+    top: 225px;
+    font-size: 17px;
+    width: 277px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border:none;
+}
+.xiaotu{
+    /* padding: 0px;
+    margin: 0px; */
+    position: absolute;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+}

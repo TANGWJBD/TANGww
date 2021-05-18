@@ -1,0 +1,75 @@
+.frame1{
+    width: 241px;
+    height: 345px;
+    border: transparent 1px solid;
+    float: left;
+    /* box-shadow: 1px 0px 0px #dad7d7,
+                -1px 0px 0px #dad7d7; */
+    border: 1px solid #dad7d7;
+    border-top: transparent;
+    border-bottom: transparent;
+}
+.frame2{
+    width: 241px;
+    height: 345px;
+    float: left;
+    margin: 0px 20px;
+    border: 1px solid #dad7d7;
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+.frame2:hover{
+    border: red 1px solid;
+    box-shadow:0px 0px 0px;
+}
+.inside{
+    width: 200px;
+    height: 325px;
+    margin: 19px 19px;
+}
+.second{
+    font-size: 14px;
+    color: #666666;
+    margin-top: 5px;
+}
+.third{
+    font-size: 12px;
+    color: #999999;
+    margin-top: 8px;
+}
+.fourth{
+    margin-top: 13px;
+    width: 200px;
+}
+.symbol1{
+    color: #ff5000;
+    font-size: 12px;
+    float: left;
+    position: relative;
+    top: 9px;
+}
+.num{
+    color: #ff5000 ;
+    font-size: 21px;
+    float: left;
+}
+.symbol2{
+    font-size:12px;
+    color: #999999;
+    float: left;
+    position: relative;
+    top: 9px;
+}
+.sales{
+    font-size: 5px;
+    position: relative;
+    left: 68px;
+    top: 6px;
+    color: #999999;
+}
+.de{
+    width: 200px;
+    height: 57px;
+    background-color: #ff4400;
+    border: 1px solid pink;
+}

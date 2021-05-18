@@ -1,0 +1,59 @@
+.bigger{
+    width: 341px;
+    height:293px ;
+    margin-left: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 16px rgb(197, 194, 194);
+}
+.biggest{
+    width: 301px;
+    height: 253px;
+    box-shadow: 0px 0px 15px  #a7a5a5;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.second{
+    font-size: 19px;
+    color: rgb(218, 21, 21);
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.third{
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 13px;
+    color: #9c9b9b;
+}
+.red{
+    width: 301px;
+    height: 2px;
+    background-color: red;
+    margin-top: 16px;
+}
+.wai{
+    position: absolute;
+    left: 145px;
+    top: 130px;
+    width:131px ;
+    height: 25px;
+    background-color: white;
+    opacity: 0.3;
+    box-shadow:0px 0px 14px black;
+}
+.tou{
+    color: black;
+    margin-left: 8px;
+    margin-top: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.second:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.third:hover{
+    color: #333;
+    cursor: pointer;
+    text-decoration: underline;
+}

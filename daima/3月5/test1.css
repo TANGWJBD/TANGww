@@ -1,0 +1,78 @@
+
+.beitu{
+    width: 466px;
+    height: 376px;
+    /* background: url("1.png"); */
+    background-color: #34a996;
+}
+/* .bei{
+    width: 459px;
+    height: 376px;
+    background-color: rgb(9, 163, 163);
+} */
+.first{
+    width: 410px;
+    height: 226px;
+    background-color: #c2e5e0;
+    position: relative;
+    top: 34px;
+    left: 27px;
+}
+.text1{
+    width: 306px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 36px;
+    left: 50px;
+}
+.text2{
+    position: relative;
+    top: 47px;
+    left: 30px;
+    width: 336px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 23px;
+}
+.second{
+    width: 0px;
+    height: 0px;
+    border: 12px solid transparent;
+    border-top-color: #6db8a8;
+    position: relative;
+    left: 66px;
+    top:35px;
+}
+.third{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 31px;
+    left: 50px;
+
+}
+.yuan{
+    width: 74px;
+    height: 74px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    float: left;
+}
+.neiyuan{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 2px solid white;
+}
+.text3{
+    float: left;
+    color: white;
+    font-size: 12.5px;
+    position: relative;
+    top: 20px;
+    left: 18.5px;
+}

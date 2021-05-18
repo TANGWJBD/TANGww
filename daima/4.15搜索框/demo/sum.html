@@ -1,0 +1,73 @@
+<!--
+ * @author: TANG
+ * @create: 2021-04-17 14:17 PM
+ * @license: MIT
+ * @lastAuthor: TANG
+ * @lastEditTime: 2021-04-20 08:49 AM
+ * @desc: 计算器
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>计算器</title>
+    <link rel="stylesheet" href="sum.css" />
+    <script src="sum.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <input type="text" name="" class="inp" disabled />
+        <div class="boxMin">
+          <div class="box1" id="clear">1</div>
+          <div class="box1" id="del">2</div>
+          <div class="box1" id="yu">3</div>
+          <div class="box1" id="chu">4</div>
+        </div>
+        <div class="boxMin">
+          <div class="box1" id="seven"></div>
+          <div class="box1" id="eight"></div>
+          <div class="box1" id="nine"></div>
+          <div class="box1" id="cheng"></div>
+        </div>
+        <div class="boxMin">
+          <div class="box1" id="four"></div>
+          <div class="box1" id="five"></div>
+          <div class="box1" id="six"></div>
+          <div class="box1" id="jian"></div>
+        </div>
+        <div class="boxMin">
+          <div class="box1" id="one"></div>
+          <div class="box1" id="two"></div>
+          <div class="box1" id="three"></div>
+          <div class="box1" id="jia"></div>
+        </div>
+        <div class="boxMin">
+          <div class="box1" id="jin"></div>
+          <div class="box1" id="zero"></div>
+          <div class="box1" id="point"></div>
+          <div class="box1" id="deng"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+        var arr1 = ['c','del','%','/',7,8,9,'X',4,5,6,'-',1,2,3,'+','#',0,'.','='];
+        function $(item){
+            return document.querySelector(item);
+        }
+        let arr2 = [];
+        let comtem = document.querySelectorAll('.box1');
+        for(let i = 0 ; i < comtem.length ; i++ ){
+            arr2.push(comtem[i]);
+        }
+        for( let i = 0; i<arr2.length;i++){
+            arr2[i].innerHTML = arr1[i]
+            arr2[i].onclick = ()=>{
+                
+            }
+        }
+    </script>
+  </body>
+</html>

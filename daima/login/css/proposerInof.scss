@@ -1,0 +1,257 @@
+@import './commond';
+.wrop-right{
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    background-color: #f7f7f7;
+    //!顶部提示框
+    .promptBox{
+        margin-top: 20px;
+        border-radius: 8px;
+        margin-bottom: 22px;
+        display: flex;
+        width: 1680px;
+        height: 50px;
+        background-color: #FFEFEA;
+        align-items: center; 
+        span{
+            margin-left: 20px;
+            margin-right: 7px;
+            svg{
+                vertical-align:sub;
+            }
+        }
+        p{
+            font-size: 14px;
+            font-weight: normal;
+            color: #ff6633;
+        }
+    }
+    //!下方内容 
+    .contain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: 1680px;
+        height: 870px;
+        margin-bottom: 38px;
+        background-color: #ffffff;
+        //!流程位置
+        .location{
+            width: 100%;
+            height: 77px;
+            line-height: 77px;
+            padding-left: 20px;
+            border-bottom: 2px solid #f7f7f7;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-weight: normal;
+            color: #666666;
+            a{
+                text-decoration: none;
+                color: #666666;
+            }
+        }
+        //!步骤
+        .step{
+            display: flex;
+            flex-wrap: wrap;
+            align-content:flex-start;
+            padding-left: 225px;
+            padding-top: 14px;
+            // width: 1200px;
+            height: 721px;
+            .stepnum{
+                position: relative;
+                margin-right: 212px;
+                margin-left: 80px;
+                display: flex;
+                width: 120px;
+                height: 120px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .circle{
+                    margin-bottom: 5px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid #ff6735;
+                    color: #ff6735;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                .stepText{
+                    text-align: center;
+                    font-size: 10px;
+                    color: #ff6735;
+                }&::after{
+                    z-index: 1;
+                    position: absolute;
+                    top: 40px;
+                    left: 76px;
+                    content: '';
+                    width: 298px;
+                    height: 0px;
+                    border: dotted 1px #d9d9d9;
+                }
+            }
+            .stepnum:nth-child(2){
+                margin-left: 0px;
+                .circle{
+                    margin-bottom: 5px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid #d9d9d9;
+                    color: #d9d9d9;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                .stepText{
+                    text-align: center;
+                    font-size: 10px;
+                    color: #d9d9d9;
+                } 
+                &::after{
+                    top: 0px;
+                    left: 0px;
+                    content: '';
+                    width: 0px;
+                    height: 0px;
+                    border: none;
+                }
+            }
+            //?表单内容
+            form{
+                width: 800px;
+                padding-top: 12px;        
+            //?表单执照选择
+            .valuelicense{
+                margin-top: 20px;
+                margin-left: 15px;
+                position: relative;
+                font-size: 14px;
+                span{
+                    color: #f5222d;
+                    margin-right: 3px;
+                }
+                select{
+                    margin-left: -7px;
+                    appearance: none;
+                    outline: none;
+                    font-size: 14px;
+                    color: #bbbbbb;
+                    border: 1px solid #d9d9d9;
+                    border-radius: 6px;
+                    padding-left: 10px;
+                    width: 154px;
+                    height: 32px;
+                }
+                &::after{
+                    position: absolute;
+                    top: 13px;
+                    left: 290px;
+                    pointer-events: none;
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    display: inline-block;
+                    border-top: 8px solid #666666;
+                    border-bottom: 8px solid transparent;
+                    border-left:  5px solid transparent;
+                    border-right:  5px solid transparent;
+                }
+            }
+            //?表单照片上传
+            .photo{
+                display: flex;
+                margin-top: 20px;
+                margin-left: 97px;
+                position: relative;
+                font-size: 14px;
+                span{
+                    color: #f5222d;
+                    margin-right: 3px;
+                }
+                .submitPh{
+                    margin-left: 3px;
+                    width: 111px;
+                    height: 111px;
+                    background-color: #999999;
+                    input{
+                        width: 110px;
+                        height: 110px;
+                        border: 0;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        outline: medium none;
+                        filter: alpha(opacity=0);
+                        -moz-opacity: 0;
+                        opacity: 0;
+                        position: absolute;
+                    }
+                    #but{
+                        position: absolute;
+                        width: 110px;
+                        height: 110px;
+                        border-radius: 5px;
+                        background-color: #FAFAFA;
+                        border: 1px dashed #707070;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        pointer-events: none;
+                        span{
+                            font-size: 12px;
+                            color: #A9A9A9;
+                            margin-top: 12px;
+                        }
+                    }
+                }
+                .psPh{
+                    display: flex;
+                    width: 252px;
+                    height: 110px;
+                    margin-top: -3px;
+                    margin-left: 20px;
+                    padding-top: 9px;
+                    padding-left: 11px;
+                    background-color: #dddddd;
+                    p{
+                        font-size: 12px;
+                        font-weight: normal;
+                        color: #727472;
+                    }
+                }
+                .imgone{
+                    margin-top: 5px;
+                    margin-right: 5px;
+                    margin-left: 3px;
+                }
+                img{
+                    width: 112px;
+                    height: 72px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        }
+        //!下一步按钮
+        .nextButton{
+            width: 120px;
+            height: 32px;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            line-height: 32px;
+            background-color: #999999;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: normal;
+            color: #ffffff;
+        }
+    }
+}

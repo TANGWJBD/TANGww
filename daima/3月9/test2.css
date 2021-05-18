@@ -1,0 +1,195 @@
+.frame{
+    height: 800px;
+    width: 327px;
+    border: 1px solid black;
+    position: relative;
+    left: 100px;
+}
+.inside{
+    height: 158px;
+    width: 98px;
+}
+.correct{
+    float: left;
+    /* position: relative;
+    left: 30px; */
+    margin-left: 40px;
+}
+.circle{
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+/* ————————————————————————————————第1个————————————————————————————— */
+.first{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+}
+.first:hover{
+    background-position-x: -126.5px;
+}
+.text1{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.first:hover+.text1{
+    color: rgb(76,73,73);
+    /* color: red; */
+}
+/* ————————————————————————————————第2个————————————————————————————— */
+.second{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+    background-position-y: -200px;
+}
+.second:hover{
+    background-position-x: -126.5px;
+}
+.text2{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.second:hover+.text2{
+    color: rgb(201,201,202);
+}
+/* ————————————————————————————————第3个————————————————————————————— */
+.third{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+    background-position-y: -400px;
+}
+.third:hover{
+    background-position-x: -126.5px;
+}
+.text3{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.third:hover+.text3{
+    color:rgb(178,211,143);
+}
+/* ————————————————————————————————第4个————————————————————————————— */
+.fourth{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+    background-position-y: -600px;
+}
+.fourth:hover{
+    background-position-x: -126.5px;
+}
+.text4{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.fourth:hover+.text4{
+    color: rgb(35,137,180);
+}
+/* ————————————————————————————————第5个————————————————————————————— */
+.fifth{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+    background-position-y: -800px;
+}
+.fifth:hover{
+    background-position-x: -126.5px;
+}
+.text5{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.fifth:hover+.text5{
+    color: rgb(235,180,37);
+}
+/* ————————————————————————————————第6个————————————————————————————— */
+.sixth{
+    background:url(./1.png);
+    background-position-x: -126.5px;
+    background-position-y: -1000px;
+}
+.sixth:hover{
+    background-position-x: -26.5px;
+}
+.text6{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.sixth:hover+.text6{
+    color: white;
+}
+/* ————————————————————————————————第7个————————————————————————————— */
+.seventh{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+    background-position-y: -300px;
+}
+.seventh:hover{
+    background-position-x: -126.5px;
+}
+.text7{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.seventh:hover+.text7{
+    color: rgb(150,123,176);
+}
+/* ————————————————————————————————第8个————————————————————————————— */
+.eighth{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+    background-position-y: -500px;
+}
+.eighth:hover{
+    background-position-x: -126.5px;
+}
+.text8{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.eighth:hover+.text8{
+    color: rgb(235,232,133);
+}
+/* ————————————————————————————————第9个————————————————————————————— */
+.ninth{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+    background-position-y: -700px;
+}
+.ninth:hover{
+    background-position-x: -126.5px;
+}
+.text9{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.ninth:hover+.text9{
+    color: rgb(216,34,30);
+}
+/* ————————————————————————————————第10个————————————————————————————— */
+.tenth{
+    background:url(./1.png);
+    background-position-x: -26.5px;
+    background-position-y: -900px;
+}
+.tenth:hover{
+    background-position-x: -126.5px;
+}
+.text10{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.tenth:hover+.text10{
+    color: rgb(235,180,37);
+}

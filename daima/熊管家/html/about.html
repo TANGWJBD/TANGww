@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- <html xmlns="http://www.w3.org/1999/xhtml"> -->
+<html lang="en" id="about-html">
+
+<head>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> -->
+<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <style type="text/css">
+        /* html,body{margin:0;padding:0;} */
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+    <div class="aoubt_container">
+        <!-- ---------------------导航-------------------- -->
+        <div class="about_header"></div>
+        <div class="transparent"></div>
+        <nav>
+            <div class="logo_triangle"></div>
+            <a href="../html/home.html">
+                <div class="logo_box">
+                    <div class="logo_pic">
+                        <img src="../imgs/logo.png" alt="">
+                    </div>
+                </div>
+            </a>
+            <!-- ---------------------导航文字-------------------- -->
+            <div class="directory">
+                <div class="directory_small directory_first">
+                    <div class="directory_transparent_box">
+                        <div class="directory_triangle"></div>
+                    </div>
+                    <a href="../html/contact.html">
+                        了解我们
+                    </a>
+                </div>
+
+                <div class="directory_small">
+                    <div class="directory_transparent_box">
+                        <div class="directory_triangle"></div>
+                    </div>
+                    <a href="../html/case.html">
+                        案例分享
+                    </a>
+                </div>
+                <div class="directory_small">
+                    <div class="directory_transparent_box">
+                        <div class="directory_triangle"></div>
+                    </div>
+                    <a href="#">
+                        精装服务
+                    </a>
+                </div>
+                <div class="directory_small">
+                    <div class="directory_transparent_box">
+                        <div class="directory_triangle"></div>
+                    </div>
+                    <a href="#">
+                        优质产品
+                    </a>
+                </div>
+                <div class="directory_small">
+                    <div class="directory_transparent_box">
+                        <div class="directory_triangle"></div>
+                    </div>
+                    <a href="../html/dynamic.html">
+                        公司动态
+                    </a>
+                </div>
+                <div class="directory_small-special">
+                    <div class="directory_transparent_box_special">
+                        <div class="directory_triangle-special"></div>
+                    </div>
+                    <a href="../html/about.html">
+                        找我们聊聊
+                    </a>
+                </div>
+            </div>
+            <!-- ---------------------小图标-------------------- -->
+            <div class="icon">
+                <div class="icon_pic">
+                    <img src="../imgs/wechat.png" alt="">
+                    <div class="icon-triangle"></div>
+                    <div class="icon-code"></div>
+                </div>
+                <div class="icon_pic">
+                    <img src="../imgs/weibo.png" alt="">
+                </div>
+                <div class="icon_pic">
+                    <img src="../imgs/dazong.png" alt="">
+                </div>
+                <div class="icon_pic special1">
+                    <img src="../imgs/douyin.png" alt="">
+                </div>
+                <div class="icon_pic special2">
+                    <img src="../imgs/qijia.png" alt="">
+                </div>
+                <div class="icon_pic">
+                    <img src="../imgs/tuba.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------正文-------------------- -->
+        <main>
+            <div class="about-bg-cover-x"></div>
+            <div class="about-big-pic">
+                <div class="about-bg-cover">
+                    <div class="about-bg-cover-text1">
+                        CONTACT US
+                    </div>
+                    <div class="about-bg-cover-text2">
+                        联系我们
+                    </div>
+                </div>
+            </div>
+            <div class="about-content1">
+                <div class="wrap">
+                    <div class="about-left">
+                        <div class="about-left-text1">
+                            联系方式
+                        </div>
+                        <table class="about-table">
+                            <tr class="about-tr">
+                                <th>
+                                    地址
+                                </th>
+                                <td class="about-td">
+                                    :
+                                </td>
+                                <td>
+                                    成都市温江区珠江广场写字楼15楼
+                                </td>
+                            </tr>
+                            <tr class="about-tr">
+                                <th>
+                                    电话
+                                </th>
+                                <td class="about-td">
+                                    :
+                                </td>
+                                <td>
+                                    028-82708866
+                                </td>
+                            </tr>
+                            <tr class="about-tr">
+                                <th>
+                                    手机
+                                </th>
+                                <td class="about-td">
+                                    :
+                                </td>
+                                <td>
+                                    13558833169
+                                </td>
+                            </tr>
+                            <tr class="about-tr">
+                                <th>
+                                    Q Q
+                                </th>
+                                <td class="about-td">
+                                    :
+                                </td>
+                                <td>
+                                    123456789
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="about-left-text2">
+                            09:00 AM ~ 06:00 PM ，周末照常上班
+                        </div>
+                        <div class="about-left-bottom">
+                            <div class="about-left-code"></div>
+                            <div class="about-left-text3">
+                                <div class="about-left-text3-top">
+                                    <div class="about-bar"></div>
+                                    <div class="about-left-text3-top-content">
+                                        扫微信二维码
+                                    </div>
+                                    <div class="about-bar"></div>
+                                </div>
+                                <div class="about-left-text3-bottom">
+                                    添加<a>熊管家</a>微信咨询
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-center-bar"></div>
+
+                    <div class="about-right">
+                        <div class="about-right-text1">
+                            <div class="about-bar"></div>
+                            <div class="about-left-text3-top-content">
+                                请客服顾问联系我
+                            </div>
+                            <div class="about-bar"></div>
+                        </div>
+                        <form>
+                            <table class="about-right-table">
+                                <tr class="about-table-tr" cellspacing="10px">
+                                    <td class="about-star">
+                                        *
+                                    </td>
+                                    <td class="about-table-text">
+                                        您的姓名
+                                    </td>
+                                    <td>
+                                        <input type="text" name="" id="" placeholder="请填写您的姓名"
+                                            class="about-right-input">
+                                    </td>
+                                </tr>
+                                <tr class="about-table-tr">
+                                    <td class="about-star">
+                                        *
+                                    </td>
+                                    <td class="about-table-text">
+                                        手机号码
+                                    </td>
+                                    <td>
+                                        <input type="text" name="" id="" placeholder="请填写您的手机号"
+                                            class="about-right-input">
+                                    </td>
+                                </tr>
+                                <tr class="about-table-tr">
+                                    <td>
+
+                                    </td>
+                                    <td class="about-table-text">
+                                        建筑面积
+                                    </td>
+                                    <td>
+                                        <select name="" id="" class="about-right-input about-right-input-bottom">
+                                            <option value="">
+                                                选填
+                                            </option>
+                                            <option value="">
+                                                200平方
+                                            </option>
+                                            <option value="">
+                                                400平方
+                                            </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="about-table-tr">
+                                    <td>
+
+                                    </td>
+                                    <td class="about-table-text">
+                                        致电时间
+                                    </td>
+                                    <td>
+                                        <select name="" id="" class="about-right-input about-right-input-bottom">
+                                            <option value="">
+                                                立即联系
+                                            </option>
+                                            <option value="">
+                                                9：00——11：00am
+                                            </option>
+                                            <option value="">
+                                                4：00——5：00pm
+                                            </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="button" name="" id="" value="立即预约" class="about-right-button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map" id="dituContent">
+
+            </div>
+            <div class="cover1"></div>
+            <div class="cover2"></div>
+        </main>
+        <!-- ---------------------尾部-------------------- -->
+        <footer>
+            <div class="foot-nav">
+                <div class="foot-wrap">
+                    <a href="../html/home.html">
+                    <div class="foot-top">
+                        <img src="../imgs/foot-logo.png" alt="">
+                    </div></a>
+                    <div class="foot-center">
+                        <div class="foot-cover"></div>
+                        <div class="foot-center-num">
+                            <img src="../imgs/foot-phone.png" alt="" class="foot-phone">
+                            <div class="foot-num">
+                                028-82708866 / 13558833169
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot-bottom">
+                        <div class="foot-bottom-left">
+                            <div class="foot-bottom-left-title">
+                                联系方式
+                            </div>
+                            <table>
+                                <tr class="foot-tr">
+                                    <td>
+                                        <div class="foot-house">
+                                            <img src="../imgs/foot-house.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        成都熊管家装饰装修有限公司
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="foot-address">
+                                            <img src="../imgs/foot-address.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="foot-td">
+                                        地址 : 成都市温江区珠江广场写字楼15楼
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="foot-s-phone">
+                                            <img src="../imgs/foot-s-phone.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        联系电话 : 028-82708866 (&nbsp;座机&nbsp;) /13558833169
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="foot-email">
+                                            <img src="../imgs/foot-email.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        E-mail : admian@admin.com
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="foot-bottom-center">
+                            <div class="foot-bottom-left-title">
+                                快速导航
+                            </div>
+                            <div class="foot-center-text">
+                                <a class="link" href="../html/contact.html">了解我们</a> / 
+                  <a class="link" href="../html/case.html">案例分享</a> / 
+                  <a class="link" href="#">精装服务</a> / 
+                  <a class="link" href="#">忧质产品</a> / 
+                  <a class="link" href="../html/details.html">公司动态</a> /
+                  <a class="link" href="../html/about.html">联系我们</a>
+                            </div>
+                            <div class="foot-bottom-center-pic">
+                                <img src="../imgs/foot-pic.png" alt="">
+                            </div>
+                        </div>
+                        <div class="foot-bottom-right">
+                            <div class="foot-bottom-left-title">
+                                快捷入口
+                            </div>
+                            <div class="foot-icon foot-icon-special">
+                                <img src="../imgs/wechat2.png" alt="">
+                                <div class="foot-triangle"></div>
+                                <div class="foot-code"></div>
+                            </div>
+                            <div class="foot-icon">
+                                <img src="../imgs/weibo2.png" alt="">
+                            </div>
+                            <div class="foot-icon">
+                                <img src="../imgs/dazong2.png" alt="">
+                            </div>
+                            <div class="foot-icon">
+                                <img src="../imgs/douyin2.png" alt="">
+                            </div>
+                            <div class="foot-icon">
+                                <img src="../imgs/qijia2.png" alt="">
+                            </div>
+                            <div class="foot-icon">
+                                <img src="../imgs/tuba2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-last">
+                <div class="foot-last-text">
+                    Copyright ©2015-2019&nbsp;&nbsp;成都熊昔家装饰装修有限公司 版权所有
+                </div>
+            </div>
+        </footer>
+        <div class="about_wrap"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(103.871699,30.692072);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"熊管家",content:"我的备注",point:"103.869831|30.691862",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("../imgs/map-icon.jpg", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+</html>

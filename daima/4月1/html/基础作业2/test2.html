@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="text1" placeholder="检测首字母是否大写">
+    <input type="button" name="" id="but1" value="第一个" onclick="fn1()">
+    <div id="div1"></div>
+
+    <!-- 第二个 -->
+
+    <input type="text" name="" id="text2" placeholder="检测是否有字母">
+    <input type="button" name="" id="but2" value="第二个" onclick="fn2()">
+    <div id="div2"></div>
+
+    <!-- 第三个 -->
+
+    <input type="text" name="" id="text3" placeholder="敏感词代替“第一”">
+    <input type="button" name="" id="but3" value="第三个" onclick="fn3()">
+    <div id="div3"></div>
+
+    <!-- 第四个 -->
+
+    <input type="text" name="" id="text4" placeholder="手机号代替">
+    <input type="button" name="" id="but4" value="第四个" onclick="fn4()">
+    <div id="div4"></div>
+
+    <!-- 第五个 -->
+
+    <input type="text" name="" id="text5" placeholder="评论区">
+    <input type="button" name="" id="but5" value="第五个" onclick="fn5()">
+    <div id="div5" style='white-space:pre;'></div>
+
+    <script>
+        //第一个
+        function fn1(){
+            var text1 = document.getElementById('text1');
+            var but1 = document.getElementById('but1');
+            var d1 = document.getElementById('div1');
+            var first = text1.value.substring(0,1);
+            var num = first.charCodeAt(0);
+            if(num>64 && num<91){
+                d1.innerHTML = first;
+                alert('的确首写是大写字母');
+            }
+            else{
+                alert('首写非大写字母，请重新输入');
+                text1.value='';
+            }
+        }
+        // 第二个
+            //(1)
+        function fn2(){
+            var text2 = document.getElementById('text2');
+            var but2 = document.getElementById('but2');
+            var d2 = document.getElementById('div2');
+            var arr = text2.value.split('');
+            // console.log(arr);
+            var k = 0;
+            for(var i=0;i<=arr.length;i++){
+                if((arr[i]>='a'&&arr[i]<='z')||(arr[i]>='A'&&arr[i]<='Z')){
+                    k++;
+                }
+            }
+            if(k==0){
+                alert('这里没有字母')
+            }
+            else{
+                alert('有字母')
+            }
+
+        }
+            //(2)
+
+        //第三个
+        
+        function fn3(){
+            var text3 = document.getElementById('text3');
+            var but3 = document.getElementById('but3');
+            var d3 = document.getElementById('div3');
+            var rep = text3.value.replace(/第一/g,"**");
+            text3.value = rep;
+        }
+
+        //第四个
+
+        function fn4(){
+            var text4 = document.getElementById('text4');
+            var but4 = document.getElementById('but4');
+            var d4 = document.getElementById('div4');
+            var con = text4.value;
+            if(Number(con)){
+                if(con.length == 11){
+                var fir = con.slice(0,3);
+                var las = con.slice(7);
+                text4.value = fir + '****' + las; 
+                }
+                else{
+                    alert("请输入正确手机号位数")
+                }
+            }
+            else{
+                alert('请输入数字，谢谢别搞我')
+            }
+            
+        }
+
+        //第五个
+
+        function fn5(){
+            var text5 = document.getElementById('text5');
+            var but5 = document.getElementById('but5');
+            var d5 = document.getElementById('div5');
+            //把字符串先分割成数组好做一点
+            var arr5 = text5.value.split('');
+            //定义计数器，方便后面截取有效的字符串
+            var counter1 = 0;
+            var counter2 = 0;
+            //选出字符串前面多余的空格
+            for(let i =0;i<=arr5.length;i++){
+                if(arr5[i]==' '){
+                    counter1++;
+                }
+                else{
+                    break;
+                }
+            }
+            //反选出字符串后面多余的空格
+            for(let i = arr5.length-1;i>0;i--){
+                if(arr5[i]==' '){
+                    counter2++;
+                }
+                else{
+                    break;
+                }
+            }
+            //得到的counter2值不能直接做为定位，需要计算一下尾部应该从哪里开始截
+            counter2 = arr5.length - counter2;
+            var newarr = arr5.slice(counter1,counter2);
+            console.log(newarr);
+            var newstr = String(newarr);
+            var newstr = newstr.replace(/,/g,'');
+            console.log(newstr);
+            var newstr = newstr.replace(/操蛋/,'**');
+            if(Number(newstr.substring(0,1))){
+                alert('首字符不可为数字，请重新输入');
+                text5.value = '';
+            }
+            else{
+                d5.innerHTML = newstr;
+                console.log(newstr);
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

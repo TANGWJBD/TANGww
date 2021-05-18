@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    min-width: 1000px;
+}
+//清除浮动
+.clearfd::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header::before{
+    content: "";
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 1px 6px #ccc;
+    z-index: 3;
+}
+header{
+    background-color: #fff;
+    position: relative;
+    .logo{
+        width: 200px;
+        height: 80px;
+        float: left;
+        display: flex;
+        align-items: center;
+        div{
+            width: 189px;
+            height: 40px;
+            background: url("../img/logo.png") no-repeat center;
+            background-size: 100%;
+        }
+    }
+    .head-right{
+        margin-left: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-nav{
+            width: 220px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 50px;
+            li{
+                width: 100px;
+                height: 80px;
+                text-align: center;
+                line-height: 80px;
+                font-size: 20px;
+                color: #333333;
+            }
+            //默认选中样式 Default selected style dss
+            .header-nav-dss{
+                font-weight: 600;
+                color: #013D87;
+                position: relative;
+            }
+            .header-nav-dss::after{
+                content: "";
+                width: 100px;
+                height: 4px;
+                background-color: #013D87;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            //点击选中我的业务,头部header添加下边距20px   
+        }
+        .showUser{
+            width: 180px;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 40px;
+            align-items: center;
+            .showUser-img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 5px;
+                background-color: brown;
+                background: url("../img/user.png") no-repeat center;
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+section{
+    // height: 500px;
+    .wrop-left{
+        float: left;
+        width: 200px;
+        height: 100%;
+        background-color: #fff;
+        .wrop-user{
+            //点击头部导航选中我的业务,左侧导航第一个li客户头像部分height减少20px
+            display: flex;
+            height: 72px;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 20px;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .wrop-userimg{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: aqua;
+                    background: url("../img/user.png") no-repeat center;
+                    background-size: 100%;
+                }
+                span{
+                    color: #333;
+                    font-size: 20px;
+                    margin-left: 10px;
+                }
+            }
+           
+        }
+        .wrop-left-nav{
+            li{
+                width: 100%;
+                height: 49px;
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid #ECECEC;
+                &:hover{
+                    background-color: rgba($color: #8EB7E9, $alpha: 0.2);
+                    cursor: pointer;
+                }
+                i{
+                    width: 20px;
+                    height: 20px;
+                    // background-color: #ccc;
+                    // background-size: 100%;
+                    background-image: url("../img/iocn.png");
+                }
+                .iocn1{
+                    background-position-y: -45px;
+                    background-position-x: 0;
+                }
+                .iocn2{
+                    background-position-y: -95px;
+                    background-position-x: 2px;
+                }
+                .iocn3{
+                    background-position-y: -283px;
+                    background-position-x: 40px;
+                }
+                .iocn4{
+                    background-position-y: -283px;
+                    background-position-x: 40px;
+                }
+                .iocn5{
+                    background-position-y: -283px;
+                    background-position-x: 40px;
+                }
+                .iocn6{
+                    background-position-y: -283px;
+                    background-position-x: 40px;
+                }
+                .iocn7{
+                    background-position-y: -283px;
+                    background-position-x: 40px;
+                }
+                p{
+                    width: 50%;
+                    span{
+                        color: #333;
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }   
+            }
+            // 鼠标悬浮
+            //默认选中样式 Default selected style dss
+            .nav-dss{
+                background-color: rgba($color: #8EB7E9, $alpha: 0.2);
+                position: relative;
+            }
+            .nav-dss::after{
+                content: "";
+                width: 4px;
+                height: 100%;
+                background-color: rgba($color: #013D87, $alpha: 0.5);
+                position: absolute;
+                left: 0; 
+            }
+           
+        }
+
+    }
+    .wrop-right{
+        height: 100%;
+    }
+}

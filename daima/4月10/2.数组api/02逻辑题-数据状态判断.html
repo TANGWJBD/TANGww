@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据状态判断</title>
+</head>
+<body>
+    <script>
+        /*
+         * 1、要求判断一个值在一个数组里面是否存在
+         */
+        // var arr = [3, 4, 6, 7, 21];
+        // var key = 10;
+        // var num = 0;
+        // for(let i = 0;i<arr.length;i++){
+        //     if(arr[i] == key){
+        //         num++
+        //     }
+        // }
+        // if(num != 0){
+        //     console.log('这里有');
+        // }
+        // else{
+        //     console.log('这里没有');
+        // }
+        
+
+        //2、要求判断多个值在一个数组里面是否存在
+        /*
+         * 2-1、只要keys中有任何一个值存在就表示存在
+         */
+        // var arr = [3, 4, 6, 5, 21 ,7];
+        // var keys = [5, 6, 7];
+        // var state = 0;
+        // for(let i = 0;i<arr.length;i++){
+        //     for(let j =0;j<keys.length;j++){
+        //         if(arr[i] == keys[j]){
+        //             state++;
+        //         }
+        //     }
+        // }
+        // if(state >= keys.length){
+        //     console.log('有');
+        // }
+        // else{
+        //     console.log("没有");
+        // }
+        // /*
+        //  * 2-2、必须keys中有所有值存在才能表示存在
+        //  */
+        // var arr = [3, 4, 6, 7, 21];
+        // var keys = [5, 6];
+        // var state = 0;
+        // var arr = [3, 4, 6, 7, 21];
+        // var keys = [2, 6];
+        // var state = 0;
+        // for(let i = 0;i<arr.length;i++){
+        //     for(let j =0;j<keys.length;j++){
+        //         if(arr[i] == keys[j]){
+        //             state++;
+        //         }
+        //     }
+        // }
+        // if(state >= 1){
+        //     console.log('有');
+        // }
+        // else{
+        //     console.log("没有");
+        // }
+    </script>
+</body>
+</html>
